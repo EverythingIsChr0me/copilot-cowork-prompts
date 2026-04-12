@@ -18,9 +18,8 @@ Cowork is a capability in Microsoft 365 Copilot that lets you delegate multi-ste
 | ------------------------------------------------------- | ----------------------------------------------------- |
 | [Healthcare](prompts/healthcare/)                       | Clinical documentation, patient comms, compliance     |
 | [Financial Services](prompts/financial-services/)       | Client reporting, regulatory prep, portfolio analysis |
-| [Education](prompts/education/)                         | Curriculum planning, student comms, admin workflows   |
-| [Manufacturing](prompts/manufacturing/)                 | Quality reporting, shift handoffs, supply chain       |
-| [Retail](prompts/retail/)                               | Inventory summaries, campaign prep, store ops         |
+| [Sales](prompts/sales/)                                 | Pipeline updates, account plans, follow-up workflows  |
+| [Human Resources](prompts/human-resources/)             | Hiring, onboarding, internal communications            |
 | [Legal](prompts/legal/)                                 | Contract review prep, case research, client updates   |
 | [Nonprofit](prompts/nonprofit/)                         | Grant reporting, donor comms, board prep              |
 | [Personal Productivity](prompts/personal-productivity/) | Email triage, meeting prep, weekly reviews            |
