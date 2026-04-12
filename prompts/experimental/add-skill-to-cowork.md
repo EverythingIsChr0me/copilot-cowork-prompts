@@ -40,4 +40,4 @@ Cowork reads the skill file from the provided path (or pasted contents), saves i
 
 ---
 
-![Asking Cowork to list skills](../../assets/screenshots/add-skill-to-cowork.png)
+![Asking Cowork to list skills](https://github.com/EverythingIsChr0me/copilot-cowork-prompts/blob/main/assets/screenshots/custom-skill-added.png)
