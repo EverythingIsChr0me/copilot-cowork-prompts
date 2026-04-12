@@ -20,14 +20,14 @@ Cowork is a capability in Microsoft 365 Copilot that lets you delegate multi-ste
 
 | Category | Description |
 | --- | --- |
-| [Healthcare]({{ '/prompts/healthcare/' | relative_url }}) | Clinical documentation, patient comms, compliance |
-| [Financial Services]({{ '/prompts/financial-services/' | relative_url }}) | Client reporting, regulatory prep, portfolio analysis |
-| [Sales]({{ '/prompts/sales/' | relative_url }}) | Pipeline updates, account plans, follow-up workflows |
-| [Human Resources]({{ '/prompts/human-resources/' | relative_url }}) | Hiring, onboarding, internal communications |
-| [Legal]({{ '/prompts/legal/' | relative_url }}) | Contract review prep, case research, client updates |
-| [Nonprofit]({{ '/prompts/nonprofit/' | relative_url }}) | Grant reporting, donor comms, board prep |
-| [Personal Productivity]({{ '/prompts/personal-productivity/' | relative_url }}) | Email triage, meeting prep, weekly reviews |
-| [Experimental]({{ '/prompts/experimental/' | relative_url }}) | Bleeding-edge, multi-agent, creative use cases |
+| [Healthcare]({{ '/prompts/healthcare/index.md' | relative_url }}) | Clinical documentation, patient comms, compliance |
+| [Financial Services]({{ '/prompts/financial-services/index.md' | relative_url }}) | Client reporting, regulatory prep, portfolio analysis |
+| [Sales]({{ '/prompts/sales/index.md' | relative_url }}) | Pipeline updates, account plans, follow-up workflows |
+| [Human Resources]({{ '/prompts/human-resources/new-employee-welcome-kit.md' | relative_url }}) | Hiring, onboarding, internal communications |
+| [Legal]({{ '/prompts/legal/matter-status-report.md' | relative_url }}) | Contract review prep, case research, client updates |
+| [Nonprofit]({{ '/prompts/nonprofit/donor-thank-you-campaign.md' | relative_url }}) | Grant reporting, donor comms, board prep |
+| [Personal Productivity]({{ '/prompts/personal-productivity/workload-dashboard.md' | relative_url }}) | Email triage, meeting prep, weekly reviews |
+| [Experimental]({{ '/prompts/experimental/add-skill-to-cowork.md' | relative_url }}) | Bleeding-edge, multi-agent, creative use cases |
 
 ## Prompt Format
 
