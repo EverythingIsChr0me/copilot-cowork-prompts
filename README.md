@@ -1,4 +1,6 @@
-# Microsoft 365 Copilot Cowork Prompts
+┌─────────────────────────────────────────────────┐
+│ ⚡ Microsoft 365 Copilot Cowork Prompts ⚡ │
+└─────────────────────────────────────────────────┘
 
 A community collection of practical [Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/) prompts for Microsoft 365 Copilot — organized by industry and use case.
 
