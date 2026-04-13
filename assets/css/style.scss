@@ -150,6 +150,23 @@ td a:hover { text-decoration: underline; }
   flex-wrap: wrap;
   gap: .5rem;
   font-size: .85rem;
+  color: #6a737d;
+}
+
+.site-footer-owner,
+.site-footer-credits {
+  color: #6a737d;
+}
+
+.site-footer-owner a,
+.site-footer-credits a {
+  color: var(--nav-accent);
+  text-decoration: none;
+}
+
+.site-footer-owner a:hover,
+.site-footer-credits a:hover {
+  text-decoration: underline;
 }
 
 /* ── Mobile ───────────────────────────────────────────────────── */
