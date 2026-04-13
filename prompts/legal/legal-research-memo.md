@@ -13,7 +13,22 @@ Drafts a formal legal research memo on a specified issue, organized in standard 
 ### The Prompt
 
 ```
-Draft a legal research memorandum on the following issue: [RESEARCH_QUESTION]. Jurisdiction: [JURISDICTION]. The memo should follow standard IRAC format — Issue, Rule, Analysis, Conclusion. In the Rule section, cite the controlling statutes and leading cases. In the Analysis section, apply the law to these specific facts: [RELEVANT_FACTS]. Conclude with a clear answer to the research question and a recommended course of action. Length: approximately [TARGET_LENGTH] pages. Save the memo to [/MATTER_FOLDER/]. Email it to [SUPERVISING_ATTORNEY_EMAIL] with the subject "Research Memo – [RESEARCH_QUESTION_SHORT_TITLE]".
+Draft a legal research memorandum on the following issue: [RESEARCH_QUESTION].
+Jurisdiction: [JURISDICTION].
+
+The memo should follow standard IRAC format — Issue, Rule, Analysis, Conclusion.
+
+In the Rule section, cite the controlling statutes and leading cases.
+
+In the Analysis section, apply the law to these specific facts: [RELEVANT_FACTS].
+
+Conclude with a clear answer to the research question and a recommended course of action.
+
+Length: approximately [TARGET_LENGTH] pages.
+
+Save the memo to [/MATTER_FOLDER/].
+
+Email it to [SUPERVISING_ATTORNEY_EMAIL] with the subject "Research Memo – [RESEARCH_QUESTION_SHORT_TITLE]".
 ```
 
 ### Expected Outcome

@@ -13,7 +13,13 @@ Reads a contract draft, extracts key terms and risk flags, and sends a structure
 ### The Prompt
 
 ```
-Open [/CONTRACT_FILE]. Extract the following into a structured summary: parties, effective date, term length, payment terms, termination clauses, limitation of liability, indemnification obligations, and any non-standard or missing clauses. Flag any clause that deviates from our standard template. Save the summary as "Review – [CONTRACT_FILE]" to [/MATTER_FOLDER/], then email it to [REVIEWER_EMAIL] with the subject "Contract Review – [CONTRACT_FILE]".
+Open [/CONTRACT_FILE].
+
+Extract the following into a structured summary: parties, effective date, term length, payment terms, termination clauses, limitation of liability, indemnification obligations, and any non-standard or missing clauses.
+
+Flag any clause that deviates from our standard template.
+
+Save the summary as "Review – [CONTRACT_FILE]" to [/MATTER_FOLDER/], then email it to [REVIEWER_EMAIL] with the subject "Contract Review – [CONTRACT_FILE]".
 ```
 
 ### Expected Outcome
