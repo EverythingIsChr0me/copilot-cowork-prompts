@@ -34,5 +34,3 @@ A polished Word status report emailed to the client, sourced from emails, Teams,
 - Variation: produce an internal version with strategy notes saved separately to SharePoint.
 
 ---
-
-Save your file as `prompts/legal/matter-status-report.md`.
