@@ -1,5 +1,7 @@
 ---
-title: Healthcare Prompts
+layout: default
+title: "Healthcare Prompts"
+description: "Clinical documentation, patient comms, compliance."
 ---
 
 ## Healthcare

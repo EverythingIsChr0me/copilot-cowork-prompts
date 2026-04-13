@@ -1,5 +1,7 @@
 ---
-title: Human Resources Prompts
+layout: default
+title: "Human Resources Prompts"
+description: "Prompts for HR leaders, practitioners, recruiters and more."
 ---
 
 ## Human Resources

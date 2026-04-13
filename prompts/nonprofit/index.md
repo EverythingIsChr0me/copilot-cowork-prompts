@@ -1,5 +1,7 @@
 ---
-title: Nonprofit Prompts
+layout: default
+title: "Nonprofit Prompts"
+description: "Grant reporting, donor comms, board prep."
 ---
 
 ## Nonprofit

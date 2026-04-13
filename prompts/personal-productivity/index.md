@@ -1,5 +1,7 @@
 ---
+layout: default
 title: Personal Productivity Prompts
+description: "Master your personal productivity every day."
 ---
 
 ## Personal Productivity

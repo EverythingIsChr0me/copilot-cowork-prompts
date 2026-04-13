@@ -1,5 +1,7 @@
 ---
+layout: default
 title: Experimental Prompts
+description: "Undocumented features and prompts that push the limits."
 ---
 
 ## Experimental

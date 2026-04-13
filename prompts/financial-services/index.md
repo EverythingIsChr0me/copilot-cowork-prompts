@@ -1,5 +1,7 @@
 ---
-title: Financial Services Prompts
+layout: default
+title: "Financial Services Prompts"
+description: "Client reporting, regulatory prep, portfolio analysis."
 ---
 
 ## Financial Services

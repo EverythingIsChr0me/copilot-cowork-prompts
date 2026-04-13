@@ -1,5 +1,7 @@
 ---
-title: Legal Prompts
+layout: default
+title: "Legal Prompts"
+description: "Contract review prep, case research, client updates."
 ---
 
 ## Legal
