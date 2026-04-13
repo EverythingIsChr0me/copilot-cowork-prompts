@@ -32,18 +32,19 @@ Using the above, produce:
 
 1. A complete `SKILL.md` file with proper YAML frontmatter (name, description) and a step-by-step workflow section. The description must be written to maximize triggering accuracy — include specific phrases a user might say, and be explicit about edge cases.
 
-2. A Word document named `[SKILL_NAME]-skill-brief.docx` that contains:
-   - Skill overview (purpose, trigger contexts, expected outputs)
-   - Installation instructions (where to place the SKILL.md file)
-   - Example prompts a user can run to test the skill
-   - A "Tips & Variations" section with known edge cases
+2. Install the SKILL.md file so that it becomes available for future Cowork sessions.
 
-Save both files and confirm the skill is ready for installation.
+3. Confirm that the skill is available and list it along with other out of the box and custom skills you have access to
+
+4. Create a Word document with a summary of the skill and what it can do, for sharing with others who might also benefit from installing and using it
+
+5. Write a test prompt that leverages the new skill
+
 ```
 
 ## Expected Outcome
 
-- A `SKILL.md` file ready to place in the appropriate `/mnt/skills/` directory
+- A `SKILL.md` ready to be installed by Cowork for future sessions
 - A Word document briefing suitable for sharing with team members or stakeholders
 - A confirmation message with the file paths and a suggested test prompt
 
