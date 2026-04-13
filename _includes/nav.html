@@ -1,0 +1,101 @@
+<nav class="global-nav" aria-label="Site navigation">
+  <div class="global-nav__inner">
+    <a class="global-nav__home" href="{{ '/' | relative_url }}">⚡ Cowork Prompts</a>
+    <button class="global-nav__toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <ul class="global-nav__links">
+      <li><a href="{{ '/prompts/healthcare/' | relative_url }}"{% if page.url contains '/healthcare/' %} aria-current="page"{% endif %}>Healthcare</a></li>
+      <li><a href="{{ '/prompts/financial-services/' | relative_url }}"{% if page.url contains '/financial-services/' %} aria-current="page"{% endif %}>Financial Services</a></li>
+      <li><a href="{{ '/prompts/sales/' | relative_url }}"{% if page.url contains '/sales/' %} aria-current="page"{% endif %}>Sales</a></li>
+      <li><a href="{{ '/prompts/human-resources/' | relative_url }}"{% if page.url contains '/human-resources/' %} aria-current="page"{% endif %}>Human Resources</a></li>
+      <li><a href="{{ '/prompts/legal/' | relative_url }}"{% if page.url contains '/legal/' %} aria-current="page"{% endif %}>Legal</a></li>
+      <li><a href="{{ '/prompts/nonprofit/' | relative_url }}"{% if page.url contains '/nonprofit/' %} aria-current="page"{% endif %}>Nonprofit</a></li>
+      <li><a href="{{ '/prompts/personal-productivity/' | relative_url }}"{% if page.url contains '/personal-productivity/' %} aria-current="page"{% endif %}>Personal Productivity</a></li>
+      <li><a href="{{ '/prompts/experimental/' | relative_url }}"{% if page.url contains '/experimental/' %} aria-current="page"{% endif %}>Experimental</a></li>
+    </ul>
+  </div>
+</nav>
+
+<style>
+  .global-nav {
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    background: #0f2a4a;
+    border-bottom: 2px solid #106ebe;
+    font-family: inherit;
+  }
+  .global-nav__inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .global-nav__home {
+    color: #fff !important;
+    font-weight: 700;
+    font-size: .95rem;
+    text-decoration: none !important;
+    padding: .65rem 0;
+    white-space: nowrap;
+    margin-right: auto;
+  }
+  .global-nav__links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+  .global-nav__links a {
+    display: block;
+    color: #a8c8f8 !important;
+    font-size: .8rem;
+    font-weight: 500;
+    text-decoration: none !important;
+    padding: .65rem .6rem;
+    border-bottom: 3px solid transparent;
+    transition: color .15s, border-color .15s;
+    white-space: nowrap;
+  }
+  .global-nav__links a:hover,
+  .global-nav__links a[aria-current="page"] {
+    color: #fff !important;
+    border-bottom-color: #106ebe;
+  }
+  .global-nav__toggle {
+    display: none;
+    background: none;
+    border: 1px solid rgba(255,255,255,.4);
+    color: #fff;
+    padding: .3rem .6rem;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 720px) {
+    .global-nav__toggle { display: block; }
+    .global-nav__links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      padding-bottom: .5rem;
+    }
+    .global-nav__links.is-open { display: flex; }
+    .global-nav__links a { padding: .5rem .25rem; border-bottom: 1px solid rgba(255,255,255,.08); border-left: 3px solid transparent; }
+    .global-nav__links a:hover,
+    .global-nav__links a[aria-current="page"] { border-bottom-color: rgba(255,255,255,.08); border-left-color: #106ebe; }
+  }
+</style>
+
+<script>
+  document.querySelector('.global-nav__toggle')?.addEventListener('click', function() {
+    const open = this.getAttribute('aria-expanded') === 'true';
+    this.setAttribute('aria-expanded', String(!open));
+    document.querySelector('.global-nav__links').classList.toggle('is-open', !open);
+  });
+</script>

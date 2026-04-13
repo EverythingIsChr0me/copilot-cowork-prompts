@@ -1,5 +1,9 @@
-title: Microsoft 365 Copilot Cowork Prompts
+title: Microsoft 365 Copilot Cowork Toolkit
 description: Community-built cowork prompts for Microsoft 365 Copilot
 theme: jekyll-theme-cayman
 include:
   - "**/*.md"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
