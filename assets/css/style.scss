@@ -151,6 +151,9 @@ td a:hover { text-decoration: underline; }
   gap: .5rem;
   font-size: .85rem;
   color: #6a737d;
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 2rem 4rem;
 }
 
 .site-footer-owner,
