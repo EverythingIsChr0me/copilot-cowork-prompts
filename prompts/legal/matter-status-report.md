@@ -13,7 +13,15 @@ Aggregates email threads, meeting notes, and task lists for a matter into a week
 ### The Prompt
 
 ```
-Gather all Outlook emails and Teams messages from the last 7 days tagged with or mentioning [MATTER_NUMBER]. Summarize open tasks, recent developments, upcoming deadlines, and pending client decisions. Pull any tracked deadlines from the Excel workbook [DEADLINE_TRACKER_FILE]. Draft a client-facing status report in Word using professional legal tone — no internal commentary or privileged strategy. Save to [SHAREPOINT_FOLDER_URL] and email to [CLIENT_EMAIL] with the subject "Matter Update – [MATTER_NAME] – [DATE]".
+Gather all Outlook emails and Teams messages from the last 7 days tagged with or mentioning [MATTER_NUMBER].
+
+Summarize open tasks, recent developments, upcoming deadlines, and pending client decisions.
+
+Pull any tracked deadlines from the Excel workbook [DEADLINE_TRACKER_FILE].
+
+Draft a client-facing status report in Word using professional legal tone — no internal commentary or privileged strategy.
+
+Save to [SHAREPOINT_FOLDER_URL] and email to [CLIENT_EMAIL] with the subject "Matter Update – [MATTER_NAME] – [DATE]".
 ```
 
 ### Expected Outcome
