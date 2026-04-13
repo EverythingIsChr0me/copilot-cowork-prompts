@@ -35,8 +35,10 @@
   <body>
 
 <header class="page-header" role="banner">
-  <img src="{{ '/assets/images/Cowork.png' | relative_url }}" alt="Cowork logo" style="height: 64px; margin-bottom: 12px;">
-  <h1 class="project-name">{{ site.title }}</h1>
+  <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 12px;">
+    <img src="{{ '/assets/images/Cowork.png' | relative_url }}" alt="Cowork logo" style="height: 64px;">
+    <h1 class="project-name" style="margin: 0;">{{ site.title }}</h1>
+  </div>
   <h2 class="project-tagline">{{ site.description }}</h2>
   <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
   <a href="{{ '/' | relative_url }}" class="btn btn-outline">Browse Prompts</a>
