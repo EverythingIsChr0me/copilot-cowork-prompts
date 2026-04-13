@@ -12,16 +12,16 @@ A community collection of practical [Copilot Cowork](https://learn.microsoft.com
 
 ## Prompt Categories
 
-| Category                                                     | Description      |
-| ------------------------------------------------------------ | ---------------- | ----------------------------------------------------- |
-| [Personal Productivity]({{ '/prompts/personal-productivity'  | relative_url }}) | Email triage, meeting prep, weekly reviews            |
-| [Experimental]({{ '/prompts/experimental'                    | relative_url }}) | Bleeding-edge, multi-agent, creative use cases        |
-| [Legal]({{ '/prompts/legal'                                  | relative_url }}) | Contract review prep, case research, client updates   |
-| [Human Resources]({{ '/prompts/human-resources'              | relative_url }}) | Hiring, onboarding, internal communications           |
-| [Nonprofit]({{ '/prompts/nonprofit'                          | relative_url }}) | Grant reporting, donor comms, board prep              |
-| [Healthcare - TODO]({{ '/prompts/healthcare'                 | relative_url }}) | Clinical documentation, patient comms, compliance     |
-| [Financial Services - TODO]({{ '/prompts/financial-services' | relative_url }}) | Client reporting, regulatory prep, portfolio analysis |
-| [Sales - TODO]({{ '/prompts/sales'                           | relative_url }}) | Pipeline updates, account plans, follow-up workflows  |
+| Category                                                    | Description      |
+| ----------------------------------------------------------- | ---------------- | ----------------------------------------------------- |
+| [Personal Productivity]({{ '/prompts/personal-productivity' | relative_url }}) | Email triage, meeting prep, weekly reviews            |
+| [Experimental]({{ '/prompts/experimental'                   | relative_url }}) | Bleeding-edge, multi-agent, creative use cases        |
+| [Legal]({{ '/prompts/legal'                                 | relative_url }}) | Contract review prep, case research, client updates   |
+| [Financial Services]({{ '/prompts/financial-services'       | relative_url }}) | Client reporting, regulatory prep, portfolio analysis |
+| [Human Resources]({{ '/prompts/human-resources'             | relative_url }}) | Hiring, onboarding, internal communications           |
+| [Nonprofit]({{ '/prompts/nonprofit'                         | relative_url }}) | Grant reporting, donor comms, board prep              |
+| [Healthcare - TODO]({{ '/prompts/healthcare'                | relative_url }}) | Clinical documentation, patient comms, compliance     |
+| [Sales - TODO]({{ '/prompts/sales'                          | relative_url }}) | Pipeline updates, account plans, follow-up workflows  |
 
 ## Prompt Format
 
