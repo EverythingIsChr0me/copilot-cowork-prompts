@@ -8,7 +8,7 @@ A community collection of practical [Copilot Cowork](https://learn.microsoft.com
 
 ## What is Cowork?
 
-[Copilot Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/) is a capability in Microsoft 365 Copilot that lets you delegate multi-step tasks to an AI agent that works autonomously across your M365 apps (Word, Excel, PowerPoint, Outlook, Teams, etc.) and reports back when done.
+[Copilot Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/) is a capability in Microsoft 365 Copilot that lets you delegate multi-step tasks to an AI agent that works autonomously across your M365 apps and services (Word, Excel, PowerPoint, Outlook, Teams, etc.) and reports back when done.
 
 ## Prompt Categories
 
@@ -29,7 +29,7 @@ Each prompt uses a standard template. See [TEMPLATE]({{ '/TEMPLATE' | relative_u
 
 ## Contributing
 
-See [CONTRIBUTING]({{ '/CONTRIBUTING.md' | relative_url }}) for guidelines.
+See [CONTRIBUTING]({{ '/CONTRIBUTING' | relative_url }}) for guidelines.
 
 ## License
 
