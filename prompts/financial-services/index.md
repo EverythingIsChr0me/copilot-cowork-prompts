@@ -6,4 +6,7 @@ description: "Client reporting, regulatory prep, portfolio analysis."
 
 ## Financial Services
 
-No prompts published yet for this category.
+- [Board Deck Pipeline](./board-deck-pipeline)
+- [Earnings Call Prep Pack](./earnings-call-prep-pack)
+- [Expense Compliance Sweep](./expense-compliance-sweep)
+- [Variance Analysis + Leadership Brief](./variance-analysis-leadership-brief)
