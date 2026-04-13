@@ -17,7 +17,7 @@ H/T to Miguel Z!
 ### Prerequisites
 
 Review the official Cowork skills documentation before running this prompt:
-[Use Copilot Cowork (Frontier) | Microsoft Learn](https://learn.microsoft.com/en-us/copilot/cowork)
+[Use Copilot Cowork (Frontier) | Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/)
 
 Create your SKILL.md file, per the docs.
 
