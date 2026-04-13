@@ -18,16 +18,16 @@ Cowork is a capability in Microsoft 365 Copilot that lets you delegate multi-ste
 
 ## Prompt Categories
 
-| Category                                                             | Description      |
-| -------------------------------------------------------------------- | ---------------- | ----------------------------------------------------- |
-| [Healthcare]({{ '/prompts/healthcare/index.md'                       | relative_url }}) | Clinical documentation, patient comms, compliance     |
-| [Financial Services]({{ '/prompts/financial-services/index.md'       | relative_url }}) | Client reporting, regulatory prep, portfolio analysis |
-| [Sales]({{ '/prompts/sales/index.md'                                 | relative_url }}) | Pipeline updates, account plans, follow-up workflows  |
-| [Human Resources]({{ '/prompts/human-resources/index.md'             | relative_url }}) | Hiring, onboarding, internal communications           |
-| [Legal]({{ '/prompts/legal/index.md'                                 | relative_url }}) | Contract review prep, case research, client updates   |
-| [Nonprofit]({{ '/prompts/nonprofit/index.md'                         | relative_url }}) | Grant reporting, donor comms, board prep              |
-| [Personal Productivity]({{ '/prompts/personal-productivity/index.md' | relative_url }}) | Email triage, meeting prep, weekly reviews            |
-| [Experimental]({{ '/prompts/experimental/index.md'                   | relative_url }}) | Bleeding-edge, multi-agent, creative use cases        |
+| Category                                                    | Description      |
+| ----------------------------------------------------------- | ---------------- | ----------------------------------------------------- |
+| [Healthcare]({{ '/prompts/healthcare'                       | relative_url }}) | Clinical documentation, patient comms, compliance     |
+| [Financial Services]({{ '/prompts/financial-services'       | relative_url }}) | Client reporting, regulatory prep, portfolio analysis |
+| [Sales]({{ '/prompts/sales'                                 | relative_url }}) | Pipeline updates, account plans, follow-up workflows  |
+| [Human Resources]({{ '/prompts/human-resources'             | relative_url }}) | Hiring, onboarding, internal communications           |
+| [Legal]({{ '/prompts/legal'                                 | relative_url }}) | Contract review prep, case research, client updates   |
+| [Nonprofit]({{ '/prompts/nonprofit'                         | relative_url }}) | Grant reporting, donor comms, board prep              |
+| [Personal Productivity]({{ '/prompts/personal-productivity' | relative_url }}) | Email triage, meeting prep, weekly reviews            |
+| [Experimental]({{ '/prompts/experimental'                   | relative_url }}) | Bleeding-edge, multi-agent, creative use cases        |
 
 ## Prompt Format
 
