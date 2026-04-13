@@ -25,11 +25,11 @@ Cowork is a capability in Microsoft 365 Copilot that lets you delegate multi-ste
 
 ## Prompt Format
 
-Each prompt uses a standard template. See [TEMPLATE.md]({{ '/TEMPLATE.md' | relative_url }}) for details.
+Each prompt uses a standard template. See [TEMPLATE]({{ '/TEMPLATE.md' | relative_url }}) for details.
 
 ## Contributing
 
-See [CONTRIBUTING.md]({{ '/CONTRIBUTING.md' | relative_url }}) for guidelines.
+See [CONTRIBUTING]({{ '/CONTRIBUTING.md' | relative_url }}) for guidelines.
 
 ## License
 
