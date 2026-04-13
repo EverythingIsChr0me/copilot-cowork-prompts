@@ -24,7 +24,11 @@ Create your SKILL.md file, per the docs.
 ### The Prompt
 
 ```
-I have a new skill file I'd like to add. It's located at [paste file path or say "I'll paste the contents below"]. Please save it to my personal skills folder so it's available in future sessions.
+I have a new skill file I'd like to add.
+
+It's located at [paste file path or say "I'll paste the contents below"].
+
+Please save it to my personal skills folder so it's available in future sessions.
 ```
 
 ### Expected Outcome
@@ -40,4 +44,4 @@ Cowork reads the skill file from the provided path (or pasted contents), saves i
 
 ---
 
-![Asking Cowork to list skills](../assets/screenshots/custom-skill-added.png)
+![Asking Cowork to list skills](../../assets/screenshots/custom-skill-added.png)
