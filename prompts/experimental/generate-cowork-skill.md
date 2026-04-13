@@ -28,9 +28,9 @@ Create a new Cowork skill based on the following specification:
 **Any source data, APIs, or integrations required:** [SOURCES_OR_NONE]
 **Placeholder tokens to use:** [LIST_TOKENS_e.g._[COMPANY_NAME]_[TIME_PERIOD]]
 
-Using the above, produce:
+Using the above, do the following:
 
-1. A complete `SKILL.md` file with proper YAML frontmatter (name, description) and a step-by-step workflow section. The description must be written to maximize triggering accuracy — include specific phrases a user might say, and be explicit about edge cases.
+1. Create a complete `SKILL.md` file with proper YAML frontmatter (name, description) and a step-by-step workflow section. The description must be written to maximize triggering accuracy — include specific phrases a user might say, and be explicit about edge cases.
 
 2. Install the SKILL.md file so that it becomes available for future Cowork sessions.
 
@@ -38,7 +38,7 @@ Using the above, produce:
 
 4. Create a Word document with a summary of the skill and what it can do, for sharing with others who might also benefit from installing and using it
 
-5. Write a test prompt that leverages the new skill
+5. Write several test prompts that leverage the new skill
 
 ```
 

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Microsoft 365 Copilot Cowork Toolkit"
+title: "Copilot Cowork Toolkit"
 description: "Community-built Cowork prompts and tools for Microsoft 365 Copilot Cowork — organized by industry, role and job function"
 ---
 
