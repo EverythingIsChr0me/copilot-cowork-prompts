@@ -1,0 +1,29 @@
+<script>
+(function () {
+  document.querySelectorAll('pre').forEach(function (pre) {
+    // Wrap pre in a relative-positioned container
+    var wrap = document.createElement('div');
+    wrap.className = 'copy-wrap';
+    pre.parentNode.insertBefore(wrap, pre);
+    wrap.appendChild(pre);
+
+    // Create the button
+    var btn = document.createElement('button');
+    btn.className = 'copy-btn';
+    btn.textContent = '📋 Copy';
+    wrap.appendChild(btn);
+
+    btn.addEventListener('click', function () {
+      var text = pre.innerText;
+      navigator.clipboard.writeText(text).then(function () {
+        btn.textContent = '✅ Copied!';
+        btn.classList.add('copied');
+        setTimeout(function () {
+          btn.textContent = '📋 Copy';
+          btn.classList.remove('copied');
+        }, 2000);
+      });
+    });
+  });
+})();
+</script>
