@@ -4,7 +4,7 @@ title: "Microsoft 365 Copilot Cowork Toolkit"
 description: "Community-built Cowork prompts and tools for Microsoft 365 Copilot Cowork — organized by industry, role and job function"
 ---
 
-A community collection of practical [Copilot Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/) prompts for Copilot Cowork, organized by industry and use case.
+A community collection of practical [Copilot Cowork](https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/) prompts, organized by industry and use case.
 
 ## What is Cowork?
 
