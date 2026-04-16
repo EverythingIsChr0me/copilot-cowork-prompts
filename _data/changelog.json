@@ -1,0 +1,326 @@
+[
+  {
+    "date": "2026-04-16T01:05:26Z",
+    "message": "\tmodified:   _includes/nav.html",
+    "files": [
+      {
+        "filename": "prompts/experimental/cowork-capability-reference.md",
+        "status": "modified"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-13T16:43:11Z",
+    "message": "\tmodified:   prompts/legal/contract-review-summary.md",
+    "files": [
+      {
+        "filename": "prompts/legal/contract-review-summary.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/legal/deposition-prep-packet.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/legal/legal-research-memo.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/legal/settlement-demand-letter.md",
+        "status": "modified"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-13T16:22:19Z",
+    "message": "\tnew file:   prompts/legal/contract-review-summary.md",
+    "files": [
+      {
+        "filename": "prompts/legal/contract-review-summary.md",
+        "status": "added"
+      },
+      {
+        "filename": "prompts/legal/deposition-prep-packet.md",
+        "status": "added"
+      },
+      {
+        "filename": "prompts/legal/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/legal/legal-research-memo.md",
+        "status": "added"
+      },
+      {
+        "filename": "prompts/legal/settlement-demand-letter.md",
+        "status": "added"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-13T16:10:00Z",
+    "message": "\tnew file:   prompts/financial-services/board-deck-pipeline.md",
+    "files": [
+      {
+        "filename": "prompts/financial-services/board-deck-pipeline.md",
+        "status": "added"
+      },
+      {
+        "filename": "prompts/financial-services/earnings-call-prep-pack.md",
+        "status": "added"
+      },
+      {
+        "filename": "prompts/financial-services/expense-compliance-sweep.md",
+        "status": "added"
+      },
+      {
+        "filename": "prompts/financial-services/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/financial-services/variance-analysis-leadership-brief.md",
+        "status": "added"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-13T15:08:37Z",
+    "message": "\tmodified:   index.md",
+    "files": [
+      {
+        "filename": "prompts/experimental/generate-cowork-skill.md",
+        "status": "modified"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-13T13:27:36Z",
+    "message": "\tmodified:   prompts/experimental/generate-cowork-skill.md",
+    "files": [
+      {
+        "filename": "prompts/experimental/generate-cowork-skill.md",
+        "status": "modified"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-13T13:01:49Z",
+    "message": "\tmodified:   prompts/experimental/index.md",
+    "files": [
+      {
+        "filename": "prompts/experimental/index.md",
+        "status": "modified"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-13T12:57:09Z",
+    "message": "\tnew file:   prompts/experimental/generate-cowork-skill.md",
+    "files": [
+      {
+        "filename": "prompts/experimental/generate-cowork-skill.md",
+        "status": "added"
+      },
+      {
+        "filename": "prompts/experimental/index.md",
+        "status": "modified"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-13T12:39:03Z",
+    "message": "\tmodified:   prompts/experimental/add-skill-to-cowork.md",
+    "files": [
+      {
+        "filename": "prompts/experimental/add-skill-to-cowork.md",
+        "status": "modified"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-13T12:34:04Z",
+    "message": "\tmodified:   prompts/experimental/add-skill-to-cowork.md",
+    "files": [
+      {
+        "filename": "prompts/experimental/add-skill-to-cowork.md",
+        "status": "modified"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-13T12:31:36Z",
+    "message": "\tnew file:   prompts/experimental/cowork-capability-reference.md",
+    "files": [
+      {
+        "filename": "prompts/experimental/cowork-capability-reference.md",
+        "status": "added"
+      },
+      {
+        "filename": "prompts/experimental/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/legal/matter-status-report.md",
+        "status": "modified"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-13T03:17:49Z",
+    "message": "\tmodified:   prompts/legal/matter-status-report.md",
+    "files": [
+      {
+        "filename": "prompts/legal/matter-status-report.md",
+        "status": "modified"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-13T03:09:43Z",
+    "message": "\tmodified:   index.md",
+    "files": [
+      {
+        "filename": "prompts/experimental/add-skill-to-cowork.md",
+        "status": "modified"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-13T03:00:52Z",
+    "message": "\tmodified:   _config.yml",
+    "files": [
+      {
+        "filename": "prompts/nonprofit/index.md",
+        "status": "modified"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-13T02:37:45Z",
+    "message": "\tmodified:   prompts/experimental/index.md",
+    "files": [
+      {
+        "filename": "prompts/experimental/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/financial-services/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/healthcare/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/human-resources/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/legal/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/nonprofit/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/personal-productivity/index.md",
+        "status": "modified"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-13T01:18:29Z",
+    "message": "\tmodified:   prompts/personal-productivity/index.md",
+    "files": [
+      {
+        "filename": "prompts/personal-productivity/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/personal-productivity/manager-team-kickoff.md",
+        "status": "added"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-12T23:47:51Z",
+    "message": "\tmodified:   prompts/experimental/index.md",
+    "files": [
+      {
+        "filename": "prompts/experimental/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/human-resources/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/legal/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/personal-productivity/index.md",
+        "status": "modified"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-12T23:45:44Z",
+    "message": "\tmodified:   prompts/personal-productivity/workload-dashboard.md",
+    "files": [
+      {
+        "filename": "prompts/personal-productivity/workload-dashboard.md",
+        "status": "modified"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-12T23:40:28Z",
+    "message": "\tmodified:   prompts/personal-productivity/workload-dashboard.md",
+    "files": [
+      {
+        "filename": "prompts/personal-productivity/workload-dashboard.md",
+        "status": "modified"
+      }
+    ]
+  },
+  {
+    "date": "2026-04-12T23:32:19Z",
+    "message": "\tmodified:   README.md",
+    "files": [
+      {
+        "filename": "prompts/experimental/index.md",
+        "status": "added"
+      },
+      {
+        "filename": "prompts/financial-services/index.md",
+        "status": "added"
+      },
+      {
+        "filename": "prompts/healthcare/index.md",
+        "status": "added"
+      },
+      {
+        "filename": "prompts/human-resources/index.md",
+        "status": "added"
+      },
+      {
+        "filename": "prompts/legal/index.md",
+        "status": "added"
+      },
+      {
+        "filename": "prompts/nonprofit/index.md",
+        "status": "added"
+      },
+      {
+        "filename": "prompts/personal-productivity/index.md",
+        "status": "added"
+      },
+      {
+        "filename": "prompts/sales/index.md",
+        "status": "added"
+      }
+    ]
+  }
+]
