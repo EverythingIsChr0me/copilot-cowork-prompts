@@ -47,8 +47,8 @@ jobs:
                   ]
               })
 
-            os.makedirs("assets/data", exist_ok=True)
-            with open("assets/data/changelog.json", "w") as f:
+          os.makedirs("assets/data", exist_ok=True)
+          with open("assets/data/changelog.json", "w") as f:
               json.dump(results, f, indent=2)
           EOF
 
@@ -64,7 +64,7 @@ jobs:
           with open("/tmp/last.json") as f:
               data = json.load(f)
           result = {"date": data[0]["commit"]["author"]["date"]}
-                with open("assets/data/last_updated.json", "w") as f:
+          with open("assets/data/last_updated.json", "w") as f:
               json.dump(result, f)
           EOF
 
