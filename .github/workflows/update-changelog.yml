@@ -47,8 +47,8 @@ jobs:
                   ]
               })
 
-          os.makedirs("_data", exist_ok=True)
-          with open("_data/changelog.json", "w") as f:
+            os.makedirs("assets/data", exist_ok=True)
+            with open("assets/data/changelog.json", "w") as f:
               json.dump(results, f, indent=2)
           EOF
 
@@ -64,7 +64,7 @@ jobs:
           with open("/tmp/last.json") as f:
               data = json.load(f)
           result = {"date": data[0]["commit"]["author"]["date"]}
-          with open("_data/last_updated.json", "w") as f:
+                with open("assets/data/last_updated.json", "w") as f:
               json.dump(result, f)
           EOF
 
@@ -72,6 +72,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add _data/changelog.json _data/last_updated.json
+          git add assets/data/changelog.json assets/data/last_updated.json
           git diff --staged --quiet || git commit -m "Update changelog data"
           git push

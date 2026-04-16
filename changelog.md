@@ -18,7 +18,7 @@ title: Changelog
 
     const API = `https://api.github.com/repos/${GitHubAPI.REPO}/commits?path=prompts&per_page=20`;
 
-    GitHubAPI.fetch$("_data/changelog.json")
+    GitHubAPI.fetch$("assets/data/changelog.json")
       .then(results => {
         const html = results.map(entry => {
           const date    = new Date(entry.date).toLocaleString("en-US", {

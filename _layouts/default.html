@@ -87,7 +87,7 @@
         const cached = GitHubAPI.cached(key);
         if (cached) { document.getElementById("repo-last-updated").innerHTML = cached; return; }
 
-        GitHubAPI.fetch$("_data/last_updated.json")
+        GitHubAPI.fetch$("assets/data/last_updated.json")
           .then(data => {
             const dt = new Date(data.date).toLocaleString("en-US", {
               year: "numeric", month: "short", day: "numeric",
