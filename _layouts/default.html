@@ -60,10 +60,11 @@
 </header>
 
     {% include nav.html %}
+    {% include github-api.html %}
     <div class="repo-meta">
       <span id="repo-last-updated">Checking for updates…</span>
     </div>
-    <main id="main-content" class="main-content" role="main">     
+    <main id="main-content" class="main-content" role="main">
       {{ content }}
     </main>
 
@@ -78,8 +79,6 @@
     </footer>
 
     {% include copy-prompt.html %}
-
-    {% include github-api.html %}
 
     <script>
       (() => {
