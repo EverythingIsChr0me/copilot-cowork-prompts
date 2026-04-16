@@ -1,0 +1,29 @@
+<script>
+  const GitHubAPI = (() => {
+    const REPO     = "EverythingIsChr0me/copilot-cowork-prompts";
+    const BASE_URL = "https://everythingischr0me.github.io/copilot-cowork-prompts";
+    const HEADERS  = {
+      Accept: "application/vnd.github+json",
+      Authorization: "Bearer {{ site.github_pat }}"
+    };
+    const CACHE_TTL = 15 * 60 * 1000;
+
+    function cached(key) {
+      try {
+        const c = JSON.parse(localStorage.getItem(key));
+        return c && (Date.now() - c.ts < CACHE_TTL) ? c.value : null;
+      } catch { return null; }
+    }
+
+    function cache(key, value) {
+      try { localStorage.setItem(key, JSON.stringify({ value, ts: Date.now() })); }
+      catch {}
+    }
+
+    function fetch$(url) {
+      return fetch(url, { headers: HEADERS }).then(r => r.json());
+    }
+
+    return { REPO, BASE_URL, HEADERS, cached, cache, fetch$ };
+  })();
+</script>

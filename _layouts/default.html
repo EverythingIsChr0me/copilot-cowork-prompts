@@ -79,36 +79,28 @@
 
     {% include copy-prompt.html %}
 
+    {% include github-api.html %}
 
-        <script>
-      const REPO     = "EverythingIsChr0me/copilot-cowork-prompts";
-      const BASE_URL = "https://everythingischr0me.github.io/copilot-cowork-prompts";
+    <script>
+      (() => {
+        const key    = "repo_last_updated";
+        const cached = GitHubAPI.cached(key);
+        if (cached) { document.getElementById("repo-last-updated").innerHTML = cached; return; }
 
-      const HEADERS = {
-        Accept: "application/vnd.github+json",
-        Authorization: "Bearer {{ site.github_pat }}"
-      };
-
-      fetch(`https://api.github.com/repos/${REPO}/commits?per_page=1`, {
-        headers: HEADERS
-      })
-        .then(r => r.json())
-        .then(data => {
-          const latest = Array.isArray(data) ? data[0] : null;
-          if (!latest) {
-            document.getElementById("repo-last-updated").textContent = `API error: ${JSON.stringify(data)}`;
-            return;
-          }
-          const dt = new Date(latest.commit.author.date).toLocaleString("en-US", {
-            year: "numeric", month: "short", day: "numeric",
-            hour: "numeric", minute: "2-digit"
-          });
-          document.getElementById("repo-last-updated").innerHTML =
-            `Last updated: ${dt} &nbsp;·&nbsp; <a href="${BASE_URL}/changelog">View changelog</a>`;
-        })
-        .catch(() => {
-          document.getElementById("repo-last-updated").textContent = "";
-        });
+        GitHubAPI.fetch$(`https://api.github.com/repos/${GitHubAPI.REPO}/commits?per_page=1`)
+          .then(data => {
+            const latest = Array.isArray(data) ? data[0] : null;
+            if (!latest) return;
+            const dt = new Date(latest.commit.author.date).toLocaleString("en-US", {
+              year: "numeric", month: "short", day: "numeric",
+              hour: "numeric", minute: "2-digit"
+            });
+            const html = `Last updated: ${dt} &nbsp;·&nbsp; <a href="${GitHubAPI.BASE_URL}/changelog">View changelog</a>`;
+            GitHubAPI.cache(key, html);
+            document.getElementById("repo-last-updated").innerHTML = html;
+          })
+          .catch(() => document.getElementById("repo-last-updated").textContent = "");
+      })();
     </script>
   </body>
 </html>
