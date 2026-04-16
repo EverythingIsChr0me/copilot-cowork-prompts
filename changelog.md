@@ -53,7 +53,7 @@ title: Changelog
         </li>`;
       }).join("");
     })
-  .catch((err) => {
-    document.getElementById("changelog-list").innerHTML = `<li>Error: ${err.message}</li>`;
-  });
+.catch((err) => {
+  document.getElementById("changelog-list").innerHTML = `<li>Error: ${err.message}</li>`;
+});
 </script>

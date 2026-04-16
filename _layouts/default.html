@@ -46,28 +46,6 @@
       gtag('js', new Date());
       gtag('config', 'G-S0WCFXQK0T');
     </script>
-
-  <script>
-    const REPO     = "EverythingIsChr0me/copilot-cowork-prompts";
-    const BASE_URL = "https://everythingischr0me.github.io/copilot-cowork-prompts";
-
-    fetch(`https://api.github.com/repos/${REPO}/commits?per_page=1`, {
-      headers: { Accept: "application/vnd.github+json" }
-    })
-      .then(r => r.json())
-      .then(([latest]) => {
-        const dt = new Date(latest.commit.author.date).toLocaleString("en-US", {
-          year: "numeric", month: "short", day: "numeric",
-          hour: "numeric", minute: "2-digit"
-        });
-        document.getElementById("repo-last-updated").innerHTML =
-          `Last updated: ${dt} &nbsp;·&nbsp; <a href="${BASE_URL}/changelog">View changelog</a>`;
-      })
-      .catch(() => {
-        document.getElementById("repo-last-updated").textContent = "";
-      });
-  </script>
-
   </head>
   <body>
 
@@ -101,5 +79,26 @@
 
     {% include copy-prompt.html %}
 
+
+        <script>
+      const REPO     = "EverythingIsChr0me/copilot-cowork-prompts";
+      const BASE_URL = "https://everythingischr0me.github.io/copilot-cowork-prompts";
+
+      fetch(`https://api.github.com/repos/${REPO}/commits?per_page=1`, {
+        headers: { Accept: "application/vnd.github+json" }
+      })
+        .then(r => r.json())
+        .then(([latest]) => {
+          const dt = new Date(latest.commit.author.date).toLocaleString("en-US", {
+            year: "numeric", month: "short", day: "numeric",
+            hour: "numeric", minute: "2-digit"
+          });
+          document.getElementById("repo-last-updated").innerHTML =
+            `Last updated: ${dt} &nbsp;·&nbsp; <a href="${BASE_URL}/changelog">View changelog</a>`;
+        })
+        .catch(() => {
+          document.getElementById("repo-last-updated").textContent = "";
+        });
+    </script>
   </body>
 </html>
