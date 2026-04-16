@@ -5,3 +5,5 @@ theme: jekyll-theme-cayman
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+
+github_pat: "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"
