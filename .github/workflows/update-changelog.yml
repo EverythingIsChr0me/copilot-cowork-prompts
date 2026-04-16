@@ -1,0 +1,74 @@
+name: Update Changelog Data
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch recent commits
+        run: |
+          curl -s \
+            -H "Authorization: Bearer ${{ secrets.GH_PAT }}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/EverythingIsChr0me/copilot-cowork-prompts/commits?path=prompts&per_page=20" \
+            > /tmp/commits.json
+
+          # Fetch file details for each commit
+          python3 << 'EOF'
+          import json, urllib.request, os
+
+          token = "${{ secrets.GH_PAT }}"
+          headers = {"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json"}
+
+          with open("/tmp/commits.json") as f:
+              commits = json.load(f)
+
+          results = []
+          for c in commits:
+              req = urllib.request.Request(c["url"], headers=headers)
+              with urllib.request.urlopen(req) as r:
+                  detail = json.load(r)
+              results.append({
+                  "date": c["commit"]["author"]["date"],
+                  "message": c["commit"]["message"].split("\n")[0],
+                  "files": [
+                      {"filename": f["filename"], "status": f["status"]}
+                      for f in detail.get("files", [])
+                      if f["filename"].startswith("prompts/") and f["filename"].endswith(".md")
+                  ]
+              })
+
+          os.makedirs("_data", exist_ok=True)
+          with open("_data/changelog.json", "w") as f:
+              json.dump(results, f, indent=2)
+          EOF
+
+      - name: Fetch last updated
+        run: |
+          curl -s \
+            -H "Authorization: Bearer ${{ secrets.GH_PAT }}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/EverythingIsChr0me/copilot-cowork-prompts/commits?per_page=1" \
+            > /tmp/last.json
+          python3 << 'EOF'
+          import json
+          with open("/tmp/last.json") as f:
+              data = json.load(f)
+          result = {"date": data[0]["commit"]["author"]["date"]}
+          with open("_data/last_updated.json", "w") as f:
+              json.dump(result, f)
+          EOF
+
+      - name: Commit data files
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add _data/changelog.json _data/last_updated.json
+          git diff --staged --quiet || git commit -m "Update changelog data"
+          git push

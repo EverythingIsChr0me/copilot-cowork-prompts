@@ -87,16 +87,14 @@
         const cached = GitHubAPI.cached(key);
         if (cached) { document.getElementById("repo-last-updated").innerHTML = cached; return; }
 
-        GitHubAPI.fetch$(`https://api.github.com/repos/${GitHubAPI.REPO}/commits?per_page=1`)
+        GitHubAPI.fetch$("_data/last_updated.json")
           .then(data => {
-            const latest = Array.isArray(data) ? data[0] : null;
-            if (!latest) return;
-            const dt = new Date(latest.commit.author.date).toLocaleString("en-US", {
+            const dt = new Date(data.date).toLocaleString("en-US", {
               year: "numeric", month: "short", day: "numeric",
               hour: "numeric", minute: "2-digit"
             });
             const html = `Last updated: ${dt} &nbsp;·&nbsp; <a href="${GitHubAPI.BASE_URL}/changelog">View changelog</a>`;
-            GitHubAPI.cache(key, html);
+            GitHubAPI.cache("repo_last_updated", html);
             document.getElementById("repo-last-updated").innerHTML = html;
           })
           .catch(() => document.getElementById("repo-last-updated").textContent = "");
