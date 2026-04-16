@@ -2,7 +2,7 @@
 
 **Category:** `experimental`
 
-**Apps Involved:** Word, Excel, PowerPoint, Outlook, Teams, OneNote, Loop, SharePoint, OneDrive
+**Apps Involved:** Word, Excel, PowerPoint, Outlook, Teams, Loop, SharePoint, OneDrive, ...
 
 **Complexity:** Simple (1-2 apps)
 
