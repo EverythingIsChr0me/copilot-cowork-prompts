@@ -88,7 +88,9 @@
         headers: { Accept: "application/vnd.github+json" }
       })
         .then(r => r.json())
-        .then(([latest]) => {
+        .then(data => {
+          const latest = Array.isArray(data) ? data[0] : null;
+          if (!latest) return;
           const dt = new Date(latest.commit.author.date).toLocaleString("en-US", {
             year: "numeric", month: "short", day: "numeric",
             hour: "numeric", minute: "2-digit"
@@ -97,7 +99,7 @@
             `Last updated: ${dt} &nbsp;·&nbsp; <a href="${BASE_URL}/changelog">View changelog</a>`;
         })
         .catch(() => {
-          document.getElementById("repo-last-updated").textContent = "";
+          document.getElementById("repo-last-updated").textContent = "blah";
         });
     </script>
   </body>
