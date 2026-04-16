@@ -84,8 +84,13 @@
       const REPO     = "EverythingIsChr0me/copilot-cowork-prompts";
       const BASE_URL = "https://everythingischr0me.github.io/copilot-cowork-prompts";
 
+      const HEADERS = {
+        Accept: "application/vnd.github+json",
+        Authorization: "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"
+      };
+
       fetch(`https://api.github.com/repos/${REPO}/commits?per_page=1`, {
-        headers: { Accept: "application/vnd.github+json" }
+        headers: HEADERS
       })
         .then(r => r.json())
         .then(data => {
@@ -102,7 +107,7 @@
             `Last updated: ${dt} &nbsp;·&nbsp; <a href="${BASE_URL}/changelog">View changelog</a>`;
         })
         .catch(() => {
-          document.getElementById("repo-last-updated").textContent = "blah";
+          document.getElementById("repo-last-updated").textContent = "";
         });
     </script>
   </body>
