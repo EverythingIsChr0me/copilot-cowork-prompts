@@ -80,11 +80,11 @@
   <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
   <a href="{{ '/' | relative_url }}" class="btn btn-outline">Browse Prompts</a>
 </header>
-<div class="repo-meta">
-  <span id="repo-last-updated">Checking for updates…</span>
-</div>
-    {% include nav.html %}
 
+    {% include nav.html %}
+    <div class="repo-meta">
+      <span id="repo-last-updated">Checking for updates…</span>
+    </div>
     <main id="main-content" class="main-content" role="main">     
       {{ content }}
     </main>
