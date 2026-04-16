@@ -90,7 +90,10 @@
         .then(r => r.json())
         .then(data => {
           const latest = Array.isArray(data) ? data[0] : null;
-          if (!latest) return;
+          if (!latest) {
+            document.getElementById("repo-last-updated").textContent = `API error: ${JSON.stringify(data)}`;
+            return;
+          }
           const dt = new Date(latest.commit.author.date).toLocaleString("en-US", {
             year: "numeric", month: "short", day: "numeric",
             hour: "numeric", minute: "2-digit"
