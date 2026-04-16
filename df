@@ -1,0 +1,66 @@
+[33maead286[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m 	modified:   _config.yml
+[33maec6475[m 	modified:   _config.yml 	modified:   _layouts/default.html
+[33mb9cf228[m 	modified:   _layouts/default.html
+[33m3575178[m 	modified:   _layouts/default.html
+[33m1cd8200[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m 	modified:   _layouts/default.html
+[33m9551def[m 	modified:   _layouts/default.html 	modified:   changelog.md
+[33mda34501[m 	modified:   changelog.md
+[33m5fd5a55[m 	modified:   _layouts/default.html 	new file:   changelog.md
+[33md1944aa[m 	modified:   _layouts/default.html
+[33m56a0c58[m 	modified:   _includes/nav.html 	modified:   _layouts/default.html 	modified:   prompts/experimental/cowork-capability-reference.md
+[33m17ea82f[m 	modified:   index.md
+[33m1419bb0[m 	modified:   _layouts/default.html
+[33m36289d4[m 	modified:   _layouts/default.html 	new file:   assets/images/Cowork.png
+[33m051ac7f[m 	modified:   _config.yml
+[33m8e159dd[m 	modified:   prompts/legal/contract-review-summary.md 	modified:   prompts/legal/deposition-prep-packet.md 	modified:   prompts/legal/legal-research-memo.md 	modified:   prompts/legal/settlement-demand-letter.md
+[33m671734e[m 	modified:   _layouts/default.html
+[33m18c519a[m 	new file:   prompts/legal/contract-review-summary.md 	new file:   prompts/legal/deposition-prep-packet.md 	modified:   prompts/legal/index.md 	new file:   prompts/legal/legal-research-memo.md 	new file:   prompts/legal/settlement-demand-letter.md
+[33m080fb10[m 	new file:   prompts/financial-services/board-deck-pipeline.md 	new file:   prompts/financial-services/earnings-call-prep-pack.md 	new file:   prompts/financial-services/expense-compliance-sweep.md 	modified:   prompts/financial-services/index.md 	new file:   prompts/financial-services/variance-analysis-leadership-brief.md
+[33m2495d5d[m 	modified:   _layouts/default.html
+[33mec4ff7e[m 	modified:   index.md 	modified:   prompts/experimental/generate-cowork-skill.md
+[33m43510a7[m 	modified:   prompts/experimental/generate-cowork-skill.md
+[33mcb7486d[m 	new file:   _includes/copy-prompt.html 	modified:   _layouts/default.html
+[33m75571bf[m 	modified:   prompts/experimental/index.md
+[33m3421291[m 	modified:   index.md
+[33ma58cf07[m 	modified:   index.md
+[33m53d3eaa[m 	new file:   prompts/experimental/generate-cowork-skill.md 	modified:   prompts/experimental/index.md
+[33md30d86c[m 	modified:   prompts/experimental/add-skill-to-cowork.md
+[33mb0531e6[m 	modified:   prompts/experimental/add-skill-to-cowork.md
+[33m787ffbb[m 	new file:   prompts/experimental/cowork-capability-reference.md 	modified:   prompts/experimental/index.md 	modified:   prompts/legal/matter-status-report.md
+[33me1e0a37[m 	modified:   prompts/legal/matter-status-report.md
+[33m2e4486b[m 	modified:   _layouts/default.html
+[33m112e2d1[m 	modified:   index.md
+[33m16d1ae5[m 	modified:   index.md 	modified:   prompts/experimental/add-skill-to-cowork.md
+[33m2a56920[m 	modified:   _config.yml 	modified:   index.md
+[33m7a2b0a9[m 	modified:   _includes/nav.html
+[33m0b36f24[m 	modified:   _config.yml 	modified:   index.md 	modified:   prompts/nonprofit/index.md
+[33m02eccc3[m 	modified:   assets/css/style.scss
+[33mf068adb[m 	modified:   assets/css/style.scss
+[33mcd58cae[m 	modified:   _config.yml 	new file:   _includes/nav.html 	new file:   _layouts/default.html 	new file:   assets/css/style.scss 	modified:   index.md
+[33m108e2cf[m 	modified:   prompts/experimental/index.md 	modified:   prompts/financial-services/index.md 	modified:   prompts/healthcare/index.md 	modified:   prompts/human-resources/index.md 	modified:   prompts/legal/index.md 	modified:   prompts/nonprofit/index.md 	modified:   prompts/personal-productivity/index.md
+[33m1fa5329[m 	modified:   prompts/personal-productivity/index.md 	new file:   prompts/personal-productivity/manager-team-kickoff.md
+[33m86e7883[m 	modified:   index.md
+[33m11dc64f[m 	modified:   index.md
+[33mf385d8a[m 	modified:   index.md
+[33m0b3e8e2[m 	modified:   index.md
+[33m070cf66[m 	modified:   prompts/experimental/index.md 	modified:   prompts/human-resources/index.md 	modified:   prompts/legal/index.md 	modified:   prompts/personal-productivity/index.md
+[33m0bd8aa7[m 	modified:   prompts/personal-productivity/workload-dashboard.md
+[33m1060174[m 	modified:   index.md
+[33ma730a7b[m 	modified:   prompts/personal-productivity/workload-dashboard.md
+[33m534fe64[m 	modified:   _config.yml
+[33m6efb089[m 	modified:   README.md 	new file:   index.md 	new file:   prompts/experimental/index.md 	new file:   prompts/financial-services/index.md 	new file:   prompts/healthcare/index.md 	new file:   prompts/human-resources/index.md 	new file:   prompts/legal/index.md 	new file:   prompts/nonprofit/index.md 	new file:   prompts/personal-productivity/index.md 	new file:   prompts/sales/index.md
+[33mf385c65[m 	new file:   _config.yml
+[33mbaa3f28[m Merge branch 'main' of https://github.com/EverythingIsChr0me/copilot-cowork-prompts
+[33mff799d6[m [experimental] update screenshot reference in prompt md
+[33m7538f74[m Change image link for add skill to cowork prompt
+[33m5579bd3[m Fix image path for add skill to cowork documentation
+[33mf8a0a07[m [experimental] Add experimental skill addition workaround
+[33m93ab80d[m update README.md
+[33m6deda6a[m update README.md
+[33mce9b6f7[m Add weekly status report, donor thank-you, and new employee welcome kit prompts
+[33mdd5123a[m Fixed link in README
+[33mc60d39f[m [personal-productivity] OneDrive file intelligence & cleanup
+[33m4e24800[m [personal-productivity] Customer onboarding
+[33m215b45e[m Merge branch 'main' of https://github.com/EverythingIsChr0me/copilot-cowork-prompts
+[33m3f504a6[m Initial scaffold
+[33ma86fd80[m Initial commit
