@@ -13,7 +13,7 @@ title: Changelog
 <script>
   const REPO     = "EverythingIsChr0me/copilot-cowork-prompts";
   const BASE_URL = "https://everythingischr0me.github.io/copilot-cowork-prompts";
-  const API      = `https://api.github.com/repos/${REPO}/commits?path=prompts&per_page=20`;
+  const API = `https://api.github.com/repos/${REPO}/commits?path=prompts&per_page=5`;
 
   fetch(API, { headers: { Accept: "application/vnd.github+json" } })
     .then(r => r.json())
@@ -53,7 +53,7 @@ title: Changelog
         </li>`;
       }).join("");
     })
-    .catch(() => {
-      document.getElementById("changelog-list").innerHTML = "<li>Could not load changelog.</li>";
-    });
+  .catch((err) => {
+    document.getElementById("changelog-list").innerHTML = `<li>Error: ${err.message}</li>`;
+  });
 </script>
