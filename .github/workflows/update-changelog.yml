@@ -43,7 +43,7 @@ jobs:
                   "files": [
                       {"filename": f["filename"], "status": f["status"]}
                       for f in detail.get("files", [])
-                      if f["filename"].startswith("prompts/") and f["filename"].endswith(".md")
+                      if f["filename"].startswith("prompts/") or f["filename"].startswith("skills/") and f["filename"].endswith(".md")
                   ]
               })
 
