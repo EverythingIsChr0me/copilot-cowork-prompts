@@ -13,7 +13,11 @@ Asks Cowork to enumerate every skill available to it — both built-in/native sk
 ### The Prompt
 
 ```
-List every skill you currently have access to. Separate them into two groups: Native Skills (built into Cowork) and Custom Skills (added to this workspace). For each skill, include the name and a one-sentence description of what it does.
+List every skill you currently have access to.
+
+Separate them into two groups: Native Skills (built into Cowork) and Custom Skills (added to this workspace).
+
+For each skill, include the name and a one-sentence description of what it does.
 ```
 
 ### Expected Outcome
