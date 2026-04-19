@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-04-19T16:12:08Z",
+    "message": "Updated nav; added 'list-skills'",
+    "files": [
+      {
+        "filename": "prompts/experimental/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/experimental/list-skills.md",
+        "status": "added"
+      }
+    ]
+  },
+  {
     "date": "2026-04-16T01:05:26Z",
     "message": "\tmodified:   _includes/nav.html",
     "files": [
@@ -282,44 +296,6 @@
       {
         "filename": "prompts/personal-productivity/workload-dashboard.md",
         "status": "modified"
-      }
-    ]
-  },
-  {
-    "date": "2026-04-12T23:32:19Z",
-    "message": "\tmodified:   README.md",
-    "files": [
-      {
-        "filename": "prompts/experimental/index.md",
-        "status": "added"
-      },
-      {
-        "filename": "prompts/financial-services/index.md",
-        "status": "added"
-      },
-      {
-        "filename": "prompts/healthcare/index.md",
-        "status": "added"
-      },
-      {
-        "filename": "prompts/human-resources/index.md",
-        "status": "added"
-      },
-      {
-        "filename": "prompts/legal/index.md",
-        "status": "added"
-      },
-      {
-        "filename": "prompts/nonprofit/index.md",
-        "status": "added"
-      },
-      {
-        "filename": "prompts/personal-productivity/index.md",
-        "status": "added"
-      },
-      {
-        "filename": "prompts/sales/index.md",
-        "status": "added"
       }
     ]
   }
