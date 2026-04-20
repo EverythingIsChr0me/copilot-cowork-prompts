@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-04-20T03:49:37Z",
+    "message": "Added Kudos and Wins Miner",
+    "files": [
+      {
+        "filename": "prompts/personal-productivity/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/personal-productivity/kudos-wins-miner.md",
+        "status": "added"
+      }
+    ]
+  },
+  {
     "date": "2026-04-19T16:23:46Z",
     "message": "Updated formatting for list-skills.md",
     "files": [
@@ -285,16 +299,6 @@
       },
       {
         "filename": "prompts/personal-productivity/index.md",
-        "status": "modified"
-      }
-    ]
-  },
-  {
-    "date": "2026-04-12T23:45:44Z",
-    "message": "\tmodified:   prompts/personal-productivity/workload-dashboard.md",
-    "files": [
-      {
-        "filename": "prompts/personal-productivity/workload-dashboard.md",
         "status": "modified"
       }
     ]
