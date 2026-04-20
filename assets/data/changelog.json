@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-04-19T16:23:46Z",
+    "message": "Updated formatting for list-skills.md",
+    "files": [
+      {
+        "filename": "prompts/experimental/list-skills.md",
+        "status": "modified"
+      }
+    ]
+  },
+  {
     "date": "2026-04-19T16:12:08Z",
     "message": "Updated nav; added 'list-skills'",
     "files": [
@@ -281,16 +291,6 @@
   },
   {
     "date": "2026-04-12T23:45:44Z",
-    "message": "\tmodified:   prompts/personal-productivity/workload-dashboard.md",
-    "files": [
-      {
-        "filename": "prompts/personal-productivity/workload-dashboard.md",
-        "status": "modified"
-      }
-    ]
-  },
-  {
-    "date": "2026-04-12T23:40:28Z",
     "message": "\tmodified:   prompts/personal-productivity/workload-dashboard.md",
     "files": [
       {
