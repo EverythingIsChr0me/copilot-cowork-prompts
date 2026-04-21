@@ -1,6 +1,6 @@
 # Renewal Risk Signal Scan
 
-**Category:** `experimental`
+**Category:** `sales`
 
 **Apps Involved:** Outlook, Teams, Excel, Word
 

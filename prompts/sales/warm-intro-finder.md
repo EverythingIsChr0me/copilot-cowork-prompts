@@ -1,6 +1,6 @@
 # Warm Intro Finder
 
-**Category:** `experimental`
+**Category:** `sales`
 
 **Apps Involved:** Outlook, Teams, SharePoint
 

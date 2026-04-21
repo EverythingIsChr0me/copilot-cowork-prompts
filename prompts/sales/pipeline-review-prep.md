@@ -1,6 +1,6 @@
 # Pipeline Review Prep
 
-**Category:** `experimental`
+**Category:** `sales`
 
 **Apps Involved:** Excel, Outlook, Teams, PowerPoint
 

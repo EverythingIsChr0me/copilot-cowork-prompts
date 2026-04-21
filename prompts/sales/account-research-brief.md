@@ -1,6 +1,6 @@
 # Account Research Brief
 
-**Category:** `experimental`
+**Category:** `sales`
 
 **Apps Involved:** Outlook, Teams, SharePoint, OneDrive, Word
 
