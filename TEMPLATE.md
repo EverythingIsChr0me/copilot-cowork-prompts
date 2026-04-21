@@ -6,7 +6,7 @@ Use this format when submitting a new Cowork prompt.
 
 ## Prompt Title
 
-**Category:** `healthcare` | `financial-services` | `education` | `manufacturing` | `retail` | `legal` | `nonprofit` | `personal-productivity` | `experimental`
+**Category:** `healthcare` | `financial-services` | `education` | `manufacturing` | `retail` | `legal` | `nonprofit` | `personal-productivity` | `experimental` | `sales`
 
 **Apps Involved:** Word, Excel, PowerPoint, Outlook, Teams, OneNote, Loop, SharePoint, OneDrive
 
