@@ -1,5 +1,31 @@
 [
   {
+    "date": "2026-04-21T16:47:20Z",
+    "message": "Added sales prompts that chain across M365 tools",
+    "files": [
+      {
+        "filename": "prompts/sales/account-research-brief.md",
+        "status": "added"
+      },
+      {
+        "filename": "prompts/sales/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/sales/pipeline-review-prep.md",
+        "status": "added"
+      },
+      {
+        "filename": "prompts/sales/renewal-risk-scan.md",
+        "status": "added"
+      },
+      {
+        "filename": "prompts/sales/warm-intro-finder.md",
+        "status": "added"
+      }
+    ]
+  },
+  {
     "date": "2026-04-20T03:49:37Z",
     "message": "Added Kudos and Wins Miner",
     "files": [
@@ -278,28 +304,6 @@
       {
         "filename": "prompts/personal-productivity/manager-team-kickoff.md",
         "status": "added"
-      }
-    ]
-  },
-  {
-    "date": "2026-04-12T23:47:51Z",
-    "message": "\tmodified:   prompts/experimental/index.md",
-    "files": [
-      {
-        "filename": "prompts/experimental/index.md",
-        "status": "modified"
-      },
-      {
-        "filename": "prompts/human-resources/index.md",
-        "status": "modified"
-      },
-      {
-        "filename": "prompts/legal/index.md",
-        "status": "modified"
-      },
-      {
-        "filename": "prompts/personal-productivity/index.md",
-        "status": "modified"
       }
     ]
   }
