@@ -1,5 +1,39 @@
 [
   {
+    "date": "2026-04-21T19:53:15Z",
+    "message": "Added Healthcare prompt pack",
+    "files": [
+      {
+        "filename": "prompts/healthcare/case-conference-prep.md",
+        "status": "added"
+      },
+      {
+        "filename": "prompts/healthcare/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/healthcare/patient-visit-prep.md",
+        "status": "added"
+      },
+      {
+        "filename": "prompts/healthcare/referral-triage.md",
+        "status": "added"
+      },
+      {
+        "filename": "prompts/healthcare/regulatory-update-scan.md",
+        "status": "added"
+      },
+      {
+        "filename": "prompts/healthcare/research-progress-report.md",
+        "status": "added"
+      },
+      {
+        "filename": "prompts/healthcare/shift-handover-digest.md",
+        "status": "added"
+      }
+    ]
+  },
+  {
     "date": "2026-04-21T16:56:48Z",
     "message": "Updated sales prompt categories",
     "files": [
@@ -277,40 +311,6 @@
     "files": [
       {
         "filename": "prompts/nonprofit/index.md",
-        "status": "modified"
-      }
-    ]
-  },
-  {
-    "date": "2026-04-13T02:37:45Z",
-    "message": "\tmodified:   prompts/experimental/index.md",
-    "files": [
-      {
-        "filename": "prompts/experimental/index.md",
-        "status": "modified"
-      },
-      {
-        "filename": "prompts/financial-services/index.md",
-        "status": "modified"
-      },
-      {
-        "filename": "prompts/healthcare/index.md",
-        "status": "modified"
-      },
-      {
-        "filename": "prompts/human-resources/index.md",
-        "status": "modified"
-      },
-      {
-        "filename": "prompts/legal/index.md",
-        "status": "modified"
-      },
-      {
-        "filename": "prompts/nonprofit/index.md",
-        "status": "modified"
-      },
-      {
-        "filename": "prompts/personal-productivity/index.md",
         "status": "modified"
       }
     ]
