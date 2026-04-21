@@ -1,5 +1,27 @@
 [
   {
+    "date": "2026-04-21T16:56:48Z",
+    "message": "Updated sales prompt categories",
+    "files": [
+      {
+        "filename": "prompts/sales/account-research-brief.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/sales/pipeline-review-prep.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/sales/renewal-risk-scan.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/sales/warm-intro-finder.md",
+        "status": "modified"
+      }
+    ]
+  },
+  {
     "date": "2026-04-21T16:47:20Z",
     "message": "Added sales prompts that chain across M365 tools",
     "files": [
@@ -290,20 +312,6 @@
       {
         "filename": "prompts/personal-productivity/index.md",
         "status": "modified"
-      }
-    ]
-  },
-  {
-    "date": "2026-04-13T01:18:29Z",
-    "message": "\tmodified:   prompts/personal-productivity/index.md",
-    "files": [
-      {
-        "filename": "prompts/personal-productivity/index.md",
-        "status": "modified"
-      },
-      {
-        "filename": "prompts/personal-productivity/manager-team-kickoff.md",
-        "status": "added"
       }
     ]
   }
