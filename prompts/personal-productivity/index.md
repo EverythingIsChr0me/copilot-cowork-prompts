@@ -6,6 +6,7 @@ description: "Master your personal productivity every day."
 
 ## Personal Productivity
 
+- [Growth & Opportunities Audit]({{ '/prompts/personal-productivity/growth-opportunities-audit' | relative_url }})
 - [Kudos and Wins Miner]({{ '/prompts/personal-productivity/kudos-wins-miner' | relative_url }})
 - [Weekly Manager Kickoff Email]({{ '/prompts/personal-productivity/manager-team-kickoff' | relative_url }})
 - [Customer Onboarding]({{ '/prompts/personal-productivity/customer-onboarding' | relative_url }})
