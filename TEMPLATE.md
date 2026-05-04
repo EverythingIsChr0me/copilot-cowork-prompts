@@ -16,6 +16,12 @@ Use this format when submitting a new Cowork prompt.
 
 One or two sentences on what this prompt accomplishes.
 
+### Demo
+
+Optional: add a YouTube URL on the next line. Prompt pages will render it as an embedded video.
+
+https://www.youtube.com/watch?v=VIDEO_ID
+
 ### The Prompt
 
 ```

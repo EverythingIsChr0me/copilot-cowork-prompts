@@ -10,6 +10,10 @@
 
 Scans your email, Teams chats, and meeting transcripts for positive mentions, kudos, and concrete examples of strong performance — useful for self-reviews, performance conversations, and building a running wins log.
 
+### Demo
+
+https://www.youtube.com/watch?v=Fkha4eMBBgI
+
 ### The Prompt
 
 ```
@@ -38,6 +42,6 @@ A structured Wins & Recognition Log with direct quotes and attributions, impact 
 
 - `[TIME_PERIOD]` — use `last quarter` for review prep, `last 30 days` for a quick pulse check.
 - Run this before any 1:1 with your manager, skip-level, or self-review submission.
-- Append *"Save this as a Loop page titled '[TIME_PERIOD] Wins Log'"* to persist the output.
-- For promotion prep, extend `[TIME_PERIOD]` to `last 6 months` and add: *"Flag any examples that demonstrate work above my current level."*
+- Append _"Save this as a Loop page titled '[TIME_PERIOD] Wins Log'"_ to persist the output.
+- For promotion prep, extend `[TIME_PERIOD]` to `last 6 months` and add: _"Flag any examples that demonstrate work above my current level."_
 - Pair with the Manager 1:1 Prep skill — use this output to populate the "Talking Points I Should Raise" section.

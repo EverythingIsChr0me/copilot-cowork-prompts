@@ -68,5 +68,8 @@
     </footer>
 
     {% include copy-prompt.html %}
+    {% if page.path contains 'prompts/' and page.name != 'index.md' %}
+      {% include demo-embed.html %}
+    {% endif %}
   </body>
 </html>
