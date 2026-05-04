@@ -1,5 +1,43 @@
 [
   {
+    "date": "2026-05-04T00:31:59Z",
+    "message": "Implement new layout and design for category pages",
+    "files": [
+      {
+        "filename": "prompts/experimental/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/financial-services/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/healthcare/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/human-resources/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/legal/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/nonprofit/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/personal-productivity/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/sales/index.md",
+        "status": "modified"
+      }
+    ]
+  },
+  {
     "date": "2026-05-03T23:59:09Z",
     "message": "Added Growth and Opportunities Audit in Personal Productivity section",
     "files": [
@@ -305,16 +343,6 @@
     "files": [
       {
         "filename": "prompts/legal/matter-status-report.md",
-        "status": "modified"
-      }
-    ]
-  },
-  {
-    "date": "2026-04-13T03:09:43Z",
-    "message": "\tmodified:   index.md",
-    "files": [
-      {
-        "filename": "prompts/experimental/add-skill-to-cowork.md",
         "status": "modified"
       }
     ]
