@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-05-03T23:59:09Z",
+    "message": "Added Growth and Opportunities Audit in Personal Productivity section",
+    "files": [
+      {
+        "filename": "prompts/personal-productivity/growth-opportunities-audit.md",
+        "status": "added"
+      },
+      {
+        "filename": "prompts/personal-productivity/index.md",
+        "status": "modified"
+      }
+    ]
+  },
+  {
     "date": "2026-04-21T19:53:15Z",
     "message": "Added Healthcare prompt pack",
     "files": [
@@ -301,16 +315,6 @@
     "files": [
       {
         "filename": "prompts/experimental/add-skill-to-cowork.md",
-        "status": "modified"
-      }
-    ]
-  },
-  {
-    "date": "2026-04-13T03:00:52Z",
-    "message": "\tmodified:   _config.yml",
-    "files": [
-      {
-        "filename": "prompts/nonprofit/index.md",
         "status": "modified"
       }
     ]
