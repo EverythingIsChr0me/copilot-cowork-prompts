@@ -1,5 +1,43 @@
 [
   {
+    "date": "2026-05-04T00:45:19Z",
+    "message": "Refactored section navigation to use includes",
+    "files": [
+      {
+        "filename": "prompts/experimental/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/financial-services/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/healthcare/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/human-resources/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/legal/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/nonprofit/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/personal-productivity/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/sales/index.md",
+        "status": "modified"
+      }
+    ]
+  },
+  {
     "date": "2026-05-04T00:31:59Z",
     "message": "Implement new layout and design for category pages",
     "files": [
@@ -331,16 +369,6 @@
         "filename": "prompts/experimental/index.md",
         "status": "modified"
       },
-      {
-        "filename": "prompts/legal/matter-status-report.md",
-        "status": "modified"
-      }
-    ]
-  },
-  {
-    "date": "2026-04-13T03:17:49Z",
-    "message": "\tmodified:   prompts/legal/matter-status-report.md",
-    "files": [
       {
         "filename": "prompts/legal/matter-status-report.md",
         "status": "modified"
