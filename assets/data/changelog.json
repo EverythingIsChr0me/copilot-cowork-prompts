@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-05-04T00:54:05Z",
+    "message": "Implemented optional video demo for prompts",
+    "files": [
+      {
+        "filename": "prompts/personal-productivity/kudos-wins-miner.md",
+        "status": "modified"
+      }
+    ]
+  },
+  {
     "date": "2026-05-04T00:45:19Z",
     "message": "Refactored section navigation to use includes",
     "files": [
@@ -353,24 +363,6 @@
     "files": [
       {
         "filename": "prompts/experimental/add-skill-to-cowork.md",
-        "status": "modified"
-      }
-    ]
-  },
-  {
-    "date": "2026-04-13T12:31:36Z",
-    "message": "\tnew file:   prompts/experimental/cowork-capability-reference.md",
-    "files": [
-      {
-        "filename": "prompts/experimental/cowork-capability-reference.md",
-        "status": "added"
-      },
-      {
-        "filename": "prompts/experimental/index.md",
-        "status": "modified"
-      },
-      {
-        "filename": "prompts/legal/matter-status-report.md",
         "status": "modified"
       }
     ]
