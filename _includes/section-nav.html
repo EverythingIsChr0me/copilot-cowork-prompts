@@ -1,0 +1,30 @@
+{% assign active_section = '' %}
+{% if page.url contains '/personal-productivity/' %}
+  {% assign active_section = 'personal-productivity' %}
+{% elsif page.url contains '/sales/' %}
+  {% assign active_section = 'sales' %}
+{% elsif page.url contains '/legal/' %}
+  {% assign active_section = 'legal' %}
+{% elsif page.url contains '/human-resources/' %}
+  {% assign active_section = 'human-resources' %}
+{% elsif page.url contains '/healthcare/' %}
+  {% assign active_section = 'healthcare' %}
+{% elsif page.url contains '/nonprofit/' %}
+  {% assign active_section = 'nonprofit' %}
+{% elsif page.url contains '/financial-services/' %}
+  {% assign active_section = 'financial-services' %}
+{% elsif page.url contains '/experimental/' %}
+  {% assign active_section = 'experimental' %}
+{% endif %}
+
+<nav class="section-nav" aria-label="Prompt sections">
+  <a class="section-nav__link" href="{{ '/' | relative_url }}">All</a>
+  <a class="section-nav__link{% if active_section == 'personal-productivity' %} is-active{% endif %}" href="{{ '/prompts/personal-productivity/' | relative_url }}">Personal productivity</a>
+  <a class="section-nav__link{% if active_section == 'sales' %} is-active{% endif %}" href="{{ '/prompts/sales/' | relative_url }}">Sales</a>
+  <a class="section-nav__link{% if active_section == 'legal' %} is-active{% endif %}" href="{{ '/prompts/legal/' | relative_url }}">Legal</a>
+  <a class="section-nav__link{% if active_section == 'human-resources' %} is-active{% endif %}" href="{{ '/prompts/human-resources/' | relative_url }}">HR</a>
+  <a class="section-nav__link{% if active_section == 'healthcare' %} is-active{% endif %}" href="{{ '/prompts/healthcare/' | relative_url }}">Healthcare</a>
+  <a class="section-nav__link{% if active_section == 'nonprofit' %} is-active{% endif %}" href="{{ '/prompts/nonprofit/' | relative_url }}">Nonprofit</a>
+  <a class="section-nav__link{% if active_section == 'financial-services' %} is-active{% endif %}" href="{{ '/prompts/financial-services/' | relative_url }}">Financial services</a>
+  <a class="section-nav__link{% if active_section == 'experimental' %} is-active{% endif %}" href="{{ '/prompts/experimental/' | relative_url }}">Experimental</a>
+</nav>

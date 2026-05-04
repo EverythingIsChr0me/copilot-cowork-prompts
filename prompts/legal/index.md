@@ -14,17 +14,7 @@ description: "Contract review prep, case research, client updates."
     <span class="prompt-section__count">5 prompts</span>
   </header>
 
-  <nav class="section-nav" aria-label="Prompt sections">
-    <a class="section-nav__link" href="{{ '/' | relative_url }}">All</a>
-    <a class="section-nav__link" href="{{ '/prompts/personal-productivity/' | relative_url }}">Personal productivity</a>
-    <a class="section-nav__link" href="{{ '/prompts/sales/' | relative_url }}">Sales</a>
-    <a class="section-nav__link is-active" href="{{ '/prompts/legal/' | relative_url }}">Legal</a>
-    <a class="section-nav__link" href="{{ '/prompts/human-resources/' | relative_url }}">HR</a>
-    <a class="section-nav__link" href="{{ '/prompts/healthcare/' | relative_url }}">Healthcare</a>
-    <a class="section-nav__link" href="{{ '/prompts/nonprofit/' | relative_url }}">Nonprofit</a>
-    <a class="section-nav__link" href="{{ '/prompts/financial-services/' | relative_url }}">Financial services</a>
-    <a class="section-nav__link" href="{{ '/prompts/experimental/' | relative_url }}">Experimental</a>
-  </nav>
+  {% include section-nav.html %}
 
   <div class="toolkit-grid">
     <article class="toolkit-card">

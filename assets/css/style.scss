@@ -162,6 +162,12 @@
   color: var(--text-primary);
 }
 
+.toolkit-nav-shell {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 1.5rem 4rem 0;
+}
+
 .toolkit-tabs {
   display: flex;
   align-items: flex-end;
@@ -178,10 +184,12 @@
   border-bottom: 2px solid transparent;
   color: var(--text-muted);
   cursor: pointer;
+  display: inline-flex;
   font: inherit;
   font-size: .9rem;
   font-weight: 600;
   padding: 0 0 .55rem;
+  text-decoration: none !important;
   white-space: nowrap;
 }
 
@@ -220,6 +228,7 @@
   font-weight: 600;
   line-height: 1;
   padding: .48rem .75rem;
+  text-decoration: none !important;
 }
 
 .toolkit-filter:hover {
@@ -574,6 +583,10 @@ td a:hover { text-decoration: underline; }
 
   .project-tagline {
     margin-left: 0;
+  }
+
+  .toolkit-nav-shell {
+    padding: 1.25rem 1rem 0;
   }
 
   .toolkit-grid {

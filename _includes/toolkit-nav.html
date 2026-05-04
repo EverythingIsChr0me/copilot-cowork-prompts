@@ -1,0 +1,95 @@
+{% assign active_tab = 'prompts' %}
+{% if page.url contains '/prompts/experimental/add-skill-to-cowork' or page.url contains '/prompts/experimental/generate-cowork-skill' or page.url contains '/prompts/experimental/list-skills' %}
+  {% assign active_tab = 'skills' %}
+{% elsif page.url contains '/prompts/experimental/cowork-capability-reference' %}
+  {% assign active_tab = 'custom' %}
+{% endif %}
+
+{% assign active_filter = 'All' %}
+{% if page.url contains '/personal-productivity/' %}
+  {% assign active_filter = 'Personal productivity' %}
+{% elsif page.url contains '/sales/' %}
+  {% assign active_filter = 'Sales' %}
+{% elsif page.url contains '/legal/' %}
+  {% assign active_filter = 'Legal' %}
+{% elsif page.url contains '/human-resources/' %}
+  {% assign active_filter = 'HR' %}
+{% elsif page.url contains '/healthcare/' %}
+  {% assign active_filter = 'Healthcare' %}
+{% elsif page.url contains '/nonprofit/' %}
+  {% assign active_filter = 'Nonprofit' %}
+{% endif %}
+
+<nav class="toolkit-nav-shell" aria-label="Toolkit navigation">
+  <div class="toolkit-tabs" role="tablist" aria-label="Toolkit sections">
+    <a class="toolkit-tab{% if active_tab == 'prompts' %} is-active{% endif %}" href="{{ '/' | relative_url }}" role="tab" aria-selected="{% if active_tab == 'prompts' %}true{% else %}false{% endif %}">
+      Prompts <span class="toolkit-tab__count">24</span>
+    </a>
+    <a class="toolkit-tab{% if active_tab == 'skills' %} is-active{% endif %}" href="{{ '/' | relative_url }}#skills" role="tab" aria-selected="{% if active_tab == 'skills' %}true{% else %}false{% endif %}">
+      Skills <span class="toolkit-tab__count">3</span>
+    </a>
+    <a class="toolkit-tab{% if active_tab == 'custom' %} is-active{% endif %}" href="{{ '/' | relative_url }}#custom" role="tab" aria-selected="{% if active_tab == 'custom' %}true{% else %}false{% endif %}">
+      Custom instructions <span class="toolkit-tab__count">2</span>
+    </a>
+  </div>
+
+  <div class="toolkit-filters" aria-label="Filter by category">
+    <a class="toolkit-filter{% if active_filter == 'All' %} is-active{% endif %}" href="{{ '/' | relative_url }}">All</a>
+    <a class="toolkit-filter{% if active_filter == 'Personal productivity' %} is-active{% endif %}" href="{{ '/prompts/personal-productivity/' | relative_url }}">Personal productivity</a>
+    <a class="toolkit-filter{% if active_filter == 'Sales' %} is-active{% endif %}" href="{{ '/prompts/sales/' | relative_url }}">Sales</a>
+    <a class="toolkit-filter{% if active_filter == 'Legal' %} is-active{% endif %}" href="{{ '/prompts/legal/' | relative_url }}">Legal</a>
+    <a class="toolkit-filter{% if active_filter == 'HR' %} is-active{% endif %}" href="{{ '/prompts/human-resources/' | relative_url }}">HR</a>
+    <a class="toolkit-filter{% if active_filter == 'Healthcare' %} is-active{% endif %}" href="{{ '/prompts/healthcare/' | relative_url }}">Healthcare</a>
+    <a class="toolkit-filter{% if active_filter == 'Nonprofit' %} is-active{% endif %}" href="{{ '/prompts/nonprofit/' | relative_url }}">Nonprofit</a>
+  </div>
+
+  <div class="toolkit-activity" aria-label="Repository activity">
+    <span class="toolkit-activity__left">
+      <span class="toolkit-activity__dot" aria-hidden="true"></span>
+      <span id="toolkit-nav-last-updated">Last updated Apr 21, 2026</span>
+      <span aria-hidden="true">·</span>
+      <span id="toolkit-nav-new-count">0 new this week</span>
+    </span>
+    <span id="toolkit-nav-contributors" class="toolkit-activity__contributors" data-count="{{ site.github.contributors.size | default: 1 }}">1 contributor</span>
+  </div>
+</nav>
+
+<script>
+  (() => {
+    const latestEl = document.getElementById("toolkit-nav-last-updated");
+    const newCountEl = document.getElementById("toolkit-nav-new-count");
+    const contributorEl = document.getElementById("toolkit-nav-contributors");
+    const contributorCount = Number(contributorEl?.dataset.count) || 1;
+
+    if (contributorEl) {
+      contributorEl.textContent = `${contributorCount} contributor${contributorCount === 1 ? "" : "s"}`;
+    }
+
+    fetch("{{ '/assets/data/changelog.json' | relative_url }}")
+      .then((response) => {
+        if (!response.ok) throw new Error("Changelog unavailable");
+        return response.json();
+      })
+      .then((entries) => {
+        if (!Array.isArray(entries) || !entries.length || !latestEl || !newCountEl) return;
+
+        const latest = new Date(entries[0].date);
+        const weekStart = new Date(latest);
+        weekStart.setDate(latest.getDate() - 7);
+
+        const addedCount = entries.reduce((count, entry) => {
+          const entryDate = new Date(entry.date);
+          if (entryDate < weekStart || entryDate > latest) return count;
+          return count + (entry.files || []).filter((file) => file.status === "added").length;
+        }, 0);
+
+        latestEl.textContent = `Last updated ${latest.toLocaleDateString("en-US", {
+          month: "short",
+          day: "numeric",
+          year: "numeric"
+        })}`;
+        newCountEl.textContent = `${addedCount} new this week`;
+      })
+      .catch(() => {});
+  })();
+</script>

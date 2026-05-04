@@ -49,6 +49,9 @@
 </header>
 
     {% include github-api.html %}
+    {% if page.path contains 'prompts/' and page.name != 'index.md' %}
+      {% include toolkit-nav.html %}
+    {% endif %}
     <main id="main-content" class="main-content" role="main">
       {{ content }}
     </main>
