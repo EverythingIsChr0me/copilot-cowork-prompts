@@ -41,14 +41,13 @@
 <header class="page-header" role="banner">
   <div class="page-header__inner">
     <div class="page-header__title-row">
-      <span class="page-header__icon" aria-hidden="true"></span>
+      <img class="page-header__logo" src="{{ '/assets/images/Cowork.png' | relative_url }}" alt="Cowork logo">
       <h1 class="project-name">{{ site.title }}</h1>
     </div>
     <p class="project-tagline">{{ site.description }}</p>
   </div>
 </header>
 
-    {% include nav.html %}
     {% include github-api.html %}
     <main id="main-content" class="main-content" role="main">
       {{ content }}

@@ -4,6 +4,39 @@ title: "Nonprofit Prompts"
 description: "Grant reporting, donor comms, board prep."
 ---
 
-## Nonprofit
+<section class="prompt-section">
+  <header class="prompt-section__header">
+    <div>
+      <span class="prompt-section__eyebrow">Prompt library</span>
+      <h2>Nonprofit</h2>
+      <p>Donor communications, stewardship, grant reporting, and board-prep workflows.</p>
+    </div>
+    <span class="prompt-section__count">1 prompt</span>
+  </header>
 
-- [Donor Thank You Campaign]({{ '/prompts/nonprofit/donor-thank-you-campaign' | relative_url }})
+  <nav class="section-nav" aria-label="Prompt sections">
+    <a class="section-nav__link" href="{{ '/' | relative_url }}">All</a>
+    <a class="section-nav__link" href="{{ '/prompts/personal-productivity/' | relative_url }}">Personal productivity</a>
+    <a class="section-nav__link" href="{{ '/prompts/sales/' | relative_url }}">Sales</a>
+    <a class="section-nav__link" href="{{ '/prompts/legal/' | relative_url }}">Legal</a>
+    <a class="section-nav__link" href="{{ '/prompts/human-resources/' | relative_url }}">HR</a>
+    <a class="section-nav__link" href="{{ '/prompts/healthcare/' | relative_url }}">Healthcare</a>
+    <a class="section-nav__link is-active" href="{{ '/prompts/nonprofit/' | relative_url }}">Nonprofit</a>
+    <a class="section-nav__link" href="{{ '/prompts/financial-services/' | relative_url }}">Financial services</a>
+    <a class="section-nav__link" href="{{ '/prompts/experimental/' | relative_url }}">Experimental</a>
+  </nav>
+
+  <div class="toolkit-grid">
+    <article class="toolkit-card">
+      <a class="toolkit-card__link" href="{{ '/prompts/nonprofit/donor-thank-you-campaign' | relative_url }}">
+        <div class="toolkit-card__meta">
+          <span>Moderate</span>
+          <span>Outlook, Excel, Word</span>
+        </div>
+        <h3>Donor Thank-You Campaign</h3>
+        <p>Reads a donor list, generates personalized thank-you letters, and queues individual emails for review.</p>
+        <span class="toolkit-category toolkit-category--nonprofit">Nonprofit</span>
+      </a>
+    </article>
+  </div>
+</section>
