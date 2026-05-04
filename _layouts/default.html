@@ -21,21 +21,6 @@
       .copy-wrap:hover .copy-btn { opacity: 1; }
       .copy-btn.copied           { background: #107c10; opacity: 1; }
 
-      .repo-meta {
-        background: #f6f8fa;
-        border-bottom: 1px solid #e1e4e8;
-        text-align: center;
-        padding: 0.5rem 1rem;
-        font-size: 0.8rem;
-        color: #57606a;
-      }
-      .repo-meta a {
-        color: #0078d4;
-        text-decoration: none;
-      }
-      .repo-meta a:hover {
-        text-decoration: underline;
-      }
     </style>
 
     <!-- Google Analytics -->
@@ -54,54 +39,32 @@
   <body>
 
 <header class="page-header" role="banner">
-  <div style="display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 12px;">
-    <img src="{{ '/assets/images/Cowork.png' | relative_url }}" alt="Cowork logo" style="height: 64px;">
-    <h1 class="project-name" style="margin: 0;">{{ site.title }}</h1>
+  <div class="page-header__inner">
+    <div class="page-header__title-row">
+      <span class="page-header__icon" aria-hidden="true"></span>
+      <h1 class="project-name">{{ site.title }}</h1>
+    </div>
+    <p class="project-tagline">{{ site.description }}</p>
   </div>
-  <h2 class="project-tagline">{{ site.description }}</h2>
-  <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-  <a href="{{ '/' | relative_url }}" class="btn btn-outline">Browse Prompts</a>
 </header>
 
     {% include nav.html %}
     {% include github-api.html %}
-    <div class="repo-meta">
-      <span id="repo-last-updated">Checking for updates…</span>
-    </div>
     <main id="main-content" class="main-content" role="main">
       {{ content }}
     </main>
 
     <footer class="site-footer" role="contentinfo">
       <span class="site-footer-owner">
-        <a href="{{ site.github.repository_url }}">{{ site.title }}</a> is maintained by the community.
+        Cowork Toolkit is maintained by the community.
       </span>
       <span class="site-footer-credits">
         <a href="{{ '/CONTRIBUTING.md' | relative_url }}">Contribute a prompt</a> ·
+        <a href="{{ site.github.repository_url }}">GitHub</a> ·
         <a href="{{ site.github.repository_url }}/blob/main/LICENSE">MIT License</a>
       </span>
     </footer>
 
     {% include copy-prompt.html %}
-
-    <script>
-      (() => {
-        const key    = "repo_last_updated";
-        const cached = GitHubAPI.cached(key);
-        if (cached) { document.getElementById("repo-last-updated").innerHTML = cached; return; }
-
-        GitHubAPI.fetch$("assets/data/last_updated.json")
-          .then(data => {
-            const dt = new Date(data.date).toLocaleString("en-US", {
-              year: "numeric", month: "short", day: "numeric",
-              hour: "numeric", minute: "2-digit"
-            });
-            const html = `Last updated: ${dt} &nbsp;·&nbsp; <a href="${GitHubAPI.BASE_URL}/changelog">View changelog</a>`;
-            GitHubAPI.cache("repo_last_updated", html);
-            document.getElementById("repo-last-updated").innerHTML = html;
-          })
-          .catch(() => document.getElementById("repo-last-updated").textContent = "");
-      })();
-    </script>
   </body>
 </html>
