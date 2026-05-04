@@ -178,6 +178,7 @@
 }
 
 .toolkit-tab {
+  align-items: center;
   appearance: none;
   background: transparent;
   border: 0;
@@ -188,6 +189,8 @@
   font: inherit;
   font-size: .9rem;
   font-weight: 600;
+  gap: .28rem;
+  line-height: 1;
   padding: 0 0 .55rem;
   text-decoration: none !important;
   white-space: nowrap;
@@ -204,9 +207,10 @@
 
 .toolkit-tab__count {
   color: inherit;
+  display: inline-flex;
   font-size: .78rem;
   font-weight: 600;
-  margin-left: .25rem;
+  line-height: 1;
 }
 
 .toolkit-filters {
@@ -272,6 +276,18 @@
 
 .toolkit-activity__contributors {
   white-space: nowrap;
+}
+
+.toolkit-nav-shell .toolkit-activity {
+  margin-bottom: 0;
+}
+
+.toolkit-nav-shell + .main-content {
+  padding-top: .85rem;
+}
+
+.toolkit-nav-shell + .main-content h1:first-child {
+  margin-top: 0;
 }
 
 .toolkit-panel[hidden],
