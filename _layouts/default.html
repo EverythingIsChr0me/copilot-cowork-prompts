@@ -40,10 +40,10 @@
 
 <header class="page-header" role="banner">
   <div class="page-header__inner">
-    <div class="page-header__title-row">
+    <a class="page-header__title-row" href="{{ '/' | relative_url }}" aria-label="{{ site.title }} home">
       <img class="page-header__logo" src="{{ '/assets/images/Cowork.png' | relative_url }}" alt="Cowork logo">
       <h1 class="project-name">{{ site.title }}</h1>
-    </div>
+    </a>
     <p class="project-tagline">{{ site.description }}</p>
   </div>
 </header>
