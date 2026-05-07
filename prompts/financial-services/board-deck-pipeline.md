@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Board Deck Pipeline"
+permalink: /prompts/financial-services/board-deck-pipeline/
+---
+
 ## Board Deck Pipeline
 
 **Category:** `financial-services`

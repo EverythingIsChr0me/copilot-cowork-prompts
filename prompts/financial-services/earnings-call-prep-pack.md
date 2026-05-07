@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Earnings Call Prep Pack"
+permalink: /prompts/financial-services/earnings-call-prep-pack/
+---
+
 ## Earnings Call Prep Pack
 
 **Category:** `financial-services`

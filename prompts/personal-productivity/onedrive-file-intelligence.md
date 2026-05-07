@@ -1,3 +1,9 @@
+---
+layout: default
+title: "OneDrive File Intelligence & Cleanup"
+permalink: /prompts/personal-productivity/onedrive-file-intelligence/
+---
+
 # OneDrive File Intelligence & Cleanup
 
 **Category:** `personal-productivity`

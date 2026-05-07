@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Matter Status Report"
+permalink: /prompts/legal/matter-status-report/
+---
+
 # Matter Status Report
 
 **Category:** `legal`

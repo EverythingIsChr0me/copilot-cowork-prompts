@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Pipeline Review Prep"
+permalink: /prompts/sales/pipeline-review-prep/
+---
+
 # Pipeline Review Prep
 
 **Category:** `sales`

@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Weekly Status Report Generator"
+permalink: /prompts/personal-productivity/weekly-status-report/
+---
+
 # Weekly Status Report Generator
 
 **Category:** `personal-productivity`

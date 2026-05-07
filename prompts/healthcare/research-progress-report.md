@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Research Progress Report Assembly"
+permalink: /prompts/healthcare/research-progress-report/
+---
+
 # Research Progress Report Assembly
 
 **Category:** `healthcare`

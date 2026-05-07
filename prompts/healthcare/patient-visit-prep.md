@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Patient Visit Prep Brief"
+permalink: /prompts/healthcare/patient-visit-prep/
+---
+
 # Patient Visit Prep Brief
 
 **Category:** `healthcare`

@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Add a Skill to Copilot Cowork"
+permalink: /prompts/experimental/add-skill-to-cowork/
+---
+
 # Add a Skill to Copilot Cowork
 
 **Category:** `experimental`

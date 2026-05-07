@@ -1,3 +1,9 @@
+---
+layout: default
+title: "List All Skills"
+permalink: /prompts/experimental/list-skills/
+---
+
 # List All Skills
 
 **Category:** `personal-productivity`

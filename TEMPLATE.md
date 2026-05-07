@@ -1,10 +1,10 @@
-# Prompt Template
-
-Use this format when submitting a new Cowork prompt.
-
+---
+layout: default
+title: "Prompt Title"
+permalink: /prompts/category-slug/prompt-file-slug/
 ---
 
-## Prompt Title
+# Prompt Title
 
 **Category:** `healthcare` | `financial-services` | `education` | `manufacturing` | `retail` | `legal` | `nonprofit` | `personal-productivity` | `experimental` | `sales`
 

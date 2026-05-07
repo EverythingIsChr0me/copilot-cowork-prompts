@@ -53,7 +53,9 @@
 </header>
 
     {% include github-api.html %}
-    {% if page.path contains 'prompts/' and page.name != 'index.md' %}
+    {% if page.url == '/changelog/' %}
+      {% include toolkit-nav.html show_activity=true %}
+    {% elsif page.path contains 'prompts/' %}
       {% include toolkit-nav.html %}
     {% endif %}
     <main id="main-content" class="main-content" role="main">
@@ -65,7 +67,8 @@
         Cowork Toolkit is maintained by the community.
       </span>
       <span class="site-footer-credits">
-        <a href="{{ '/CONTRIBUTING.md' | relative_url }}">Contribute a prompt</a> ·
+        <a href="{{ '/changelog/' | relative_url }}">Updates</a> ·
+        <a href="{{ '/contribute/' | relative_url }}">Contribute a prompt</a> ·
         <a href="{{ site.github.repository_url }}">GitHub</a> ·
         <a href="{{ site.github.repository_url }}/blob/main/LICENSE">MIT License</a>
       </span>

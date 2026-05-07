@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Expense Compliance Sweep"
+permalink: /prompts/financial-services/expense-compliance-sweep/
+---
+
 ## Expense Compliance Sweep
 
 **Category:** `financial-services`

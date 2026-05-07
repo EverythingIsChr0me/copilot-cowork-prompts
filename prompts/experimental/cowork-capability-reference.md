@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Cowork Capability Reference"
+permalink: /prompts/experimental/cowork-capability-reference/
+---
+
 # Cowork Capability Reference
 
 **Category:** `experimental`

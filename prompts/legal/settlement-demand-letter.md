@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Settlement Demand Letter"
+permalink: /prompts/legal/settlement-demand-letter/
+---
+
 # Settlement Demand Letter
 
 **Category:** `legal`

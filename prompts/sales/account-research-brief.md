@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Account Research Brief"
+permalink: /prompts/sales/account-research-brief/
+---
+
 # Account Research Brief
 
 **Category:** `sales`

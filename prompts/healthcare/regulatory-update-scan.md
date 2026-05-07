@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Policy & Regulatory Update Scan"
+permalink: /prompts/healthcare/regulatory-update-scan/
+---
+
 # Policy & Regulatory Update Scan
 
 **Category:** `healthcare`

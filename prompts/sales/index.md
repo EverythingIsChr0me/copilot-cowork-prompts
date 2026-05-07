@@ -7,65 +7,19 @@ description: "Prompts for prospecting, pipeline, and renewals."
 <section class="prompt-section">
   <header class="prompt-section__header">
     <div>
-      <span class="prompt-section__eyebrow">Prompt library</span>
       <h2>Sales</h2>
       <p>Prospecting, account research, pipeline review, and renewal workflows for customer-facing teams.</p>
     </div>
     <span class="prompt-section__count">4 prompts</span>
   </header>
 
-  {% include section-nav.html %}
-
   <div class="toolkit-grid">
-    <article class="toolkit-card">
-      <a class="toolkit-card__link" href="{{ '/prompts/sales/account-research-brief' | relative_url }}">
-        <div class="toolkit-card__meta">
-          <span class="toolkit-status toolkit-status--trending">Trending</span>
-          <span>Advanced</span>
-          <span>Outlook, Teams, SharePoint, OneDrive, Word</span>
-        </div>
-        <h3>Account Research Brief</h3>
-        <p>Pulls M365 relationship signals into a single pre-meeting brief for a target account.</p>
-        <span class="toolkit-category toolkit-category--sales">Sales</span>
-      </a>
-    </article>
+    {% include toolkit-card.html url="/prompts/sales/account-research-brief" title="Account Research Brief" description="Pulls M365 relationship signals into a single pre-meeting brief for a target account." complexity="Advanced" apps="Outlook, Teams, SharePoint, OneDrive, Word" category="Sales" category_class="sales" status="Trending" %}
 
-    <article class="toolkit-card">
-      <a class="toolkit-card__link" href="{{ '/prompts/sales/pipeline-review-prep' | relative_url }}">
-        <div class="toolkit-card__meta">
-          <span class="toolkit-status toolkit-status--new">New</span>
-          <span>Advanced</span>
-          <span>Excel, Outlook, Teams, PowerPoint</span>
-        </div>
-        <h3>Pipeline Review Prep</h3>
-        <p>Compares pipeline exports with real engagement signals and builds review slides for manager conversations.</p>
-        <span class="toolkit-category toolkit-category--sales">Sales</span>
-      </a>
-    </article>
+    {% include toolkit-card.html url="/prompts/sales/pipeline-review-prep" title="Pipeline Review Prep" description="Compares pipeline exports with real engagement signals and builds review slides for manager conversations." complexity="Advanced" apps="Excel, Outlook, Teams, PowerPoint" category="Sales" category_class="sales" status="New" %}
 
-    <article class="toolkit-card">
-      <a class="toolkit-card__link" href="{{ '/prompts/sales/renewal-risk-scan' | relative_url }}">
-        <div class="toolkit-card__meta">
-          <span class="toolkit-status toolkit-status--new">New</span>
-          <span>Advanced</span>
-          <span>Outlook, Teams, Excel, Word</span>
-        </div>
-        <h3>Renewal Risk Signal Scan</h3>
-        <p>Scans customer communications for budget, reorg, competitor, escalation, and champion risk signals.</p>
-        <span class="toolkit-category toolkit-category--sales">Sales</span>
-      </a>
-    </article>
+    {% include toolkit-card.html url="/prompts/sales/renewal-risk-scan" title="Renewal Risk Signal Scan" description="Scans customer communications for budget, reorg, competitor, escalation, and champion risk signals." complexity="Advanced" apps="Outlook, Teams, Excel, Word" category="Sales" category_class="sales" status="New" %}
 
-    <article class="toolkit-card">
-      <a class="toolkit-card__link" href="{{ '/prompts/sales/warm-intro-finder' | relative_url }}">
-        <div class="toolkit-card__meta">
-          <span>Moderate</span>
-          <span>Outlook, Teams, SharePoint</span>
-        </div>
-        <h3>Warm Intro Finder</h3>
-        <p>Finds the shortest warm path into a target account through existing M365 relationships.</p>
-        <span class="toolkit-category toolkit-category--sales">Sales</span>
-      </a>
-    </article>
+    {% include toolkit-card.html url="/prompts/sales/warm-intro-finder" title="Warm Intro Finder" description="Finds the shortest warm path into a target account through existing M365 relationships." complexity="Moderate" apps="Outlook, Teams, SharePoint" category="Sales" category_class="sales" %}
   </div>
 </section>

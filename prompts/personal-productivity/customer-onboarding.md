@@ -1,3 +1,9 @@
+---
+layout: default
+title: "New Customer Onboarding"
+permalink: /prompts/personal-productivity/customer-onboarding/
+---
+
 # New Customer Onboarding
 
 **Category:** `personal-productivity`

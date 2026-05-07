@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Legal Research Memo"
+permalink: /prompts/legal/legal-research-memo/
+---
+
 # Legal Research Memo
 
 **Category:** `legal`

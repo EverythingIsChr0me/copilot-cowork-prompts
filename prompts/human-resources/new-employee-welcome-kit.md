@@ -1,3 +1,9 @@
+---
+layout: default
+title: "New Employee Welcome Kit"
+permalink: /prompts/human-resources/new-employee-welcome-kit/
+---
+
 # New Employee Welcome Kit
 
 **Category:** `education`

@@ -43,53 +43,57 @@
     <a class="toolkit-filter{% if active_filter == 'Nonprofit' %} is-active{% endif %}" href="{{ '/prompts/nonprofit/' | relative_url }}">Nonprofit</a>
   </div>
 
-  <div class="toolkit-activity" aria-label="Repository activity">
-    <span class="toolkit-activity__left">
-      <span class="toolkit-activity__dot" aria-hidden="true"></span>
-      <span id="toolkit-nav-last-updated">Last updated Apr 21, 2026</span>
-      <span aria-hidden="true">·</span>
-      <span id="toolkit-nav-new-count">0 new this week</span>
-    </span>
-    <span id="toolkit-nav-contributors" class="toolkit-activity__contributors" data-count="{{ site.github.contributors.size | default: 1 }}">1 contributor</span>
-  </div>
+  {% if include.show_activity %}
+    <div class="toolkit-activity" aria-label="Repository activity">
+      <a class="toolkit-activity__left toolkit-activity__link" href="{{ '/changelog/' | relative_url }}">
+        <span class="toolkit-activity__dot" aria-hidden="true"></span>
+        <span id="toolkit-nav-last-updated">Last updated Apr 21, 2026</span>
+        <span aria-hidden="true">·</span>
+        <span id="toolkit-nav-new-count">0 new this week</span>
+      </a>
+      <span id="toolkit-nav-contributors" class="toolkit-activity__contributors" data-count="{{ site.github.contributors.size | default: 1 }}">1 contributor</span>
+    </div>
+  {% endif %}
 </nav>
 
-<script>
-  (() => {
-    const latestEl = document.getElementById("toolkit-nav-last-updated");
-    const newCountEl = document.getElementById("toolkit-nav-new-count");
-    const contributorEl = document.getElementById("toolkit-nav-contributors");
-    const contributorCount = Number(contributorEl?.dataset.count) || 1;
+{% if include.show_activity %}
+  <script>
+    (() => {
+      const latestEl = document.getElementById("toolkit-nav-last-updated");
+      const newCountEl = document.getElementById("toolkit-nav-new-count");
+      const contributorEl = document.getElementById("toolkit-nav-contributors");
+      const contributorCount = Number(contributorEl?.dataset.count) || 1;
 
-    if (contributorEl) {
-      contributorEl.textContent = `${contributorCount} contributor${contributorCount === 1 ? "" : "s"}`;
-    }
+      if (contributorEl) {
+        contributorEl.textContent = `${contributorCount} contributor${contributorCount === 1 ? "" : "s"}`;
+      }
 
-    fetch("{{ '/assets/data/changelog.json' | relative_url }}")
-      .then((response) => {
-        if (!response.ok) throw new Error("Changelog unavailable");
-        return response.json();
-      })
-      .then((entries) => {
-        if (!Array.isArray(entries) || !entries.length || !latestEl || !newCountEl) return;
+      fetch("{{ '/assets/data/changelog.json' | relative_url }}")
+        .then((response) => {
+          if (!response.ok) throw new Error("Changelog unavailable");
+          return response.json();
+        })
+        .then((entries) => {
+          if (!Array.isArray(entries) || !entries.length || !latestEl || !newCountEl) return;
 
-        const latest = new Date(entries[0].date);
-        const weekStart = new Date(latest);
-        weekStart.setDate(latest.getDate() - 7);
+          const latest = new Date(entries[0].date);
+          const weekStart = new Date(latest);
+          weekStart.setDate(latest.getDate() - 7);
 
-        const addedCount = entries.reduce((count, entry) => {
-          const entryDate = new Date(entry.date);
-          if (entryDate < weekStart || entryDate > latest) return count;
-          return count + (entry.files || []).filter((file) => file.status === "added").length;
-        }, 0);
+          const addedCount = entries.reduce((count, entry) => {
+            const entryDate = new Date(entry.date);
+            if (entryDate < weekStart || entryDate > latest) return count;
+            return count + (entry.files || []).filter((file) => file.status === "added").length;
+          }, 0);
 
-        latestEl.textContent = `Last updated ${latest.toLocaleDateString("en-US", {
-          month: "short",
-          day: "numeric",
-          year: "numeric"
-        })}`;
-        newCountEl.textContent = `${addedCount} new this week`;
-      })
-      .catch(() => {});
-  })();
-</script>
+          latestEl.textContent = `Last updated ${latest.toLocaleDateString("en-US", {
+            month: "short",
+            day: "numeric",
+            year: "numeric"
+          })}`;
+          newCountEl.textContent = `${addedCount} new this week`;
+        })
+        .catch(() => {});
+    })();
+  </script>
+{% endif %}

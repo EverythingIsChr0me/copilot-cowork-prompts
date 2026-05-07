@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Weekly Manager Kickoff Email"
+permalink: /prompts/personal-productivity/manager-team-kickoff/
+---
+
 # Weekly Manager Kickoff Email
 
 **Category:** `personal-productivity`

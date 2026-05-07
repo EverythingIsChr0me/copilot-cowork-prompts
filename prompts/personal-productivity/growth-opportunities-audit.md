@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Growth Opportunities Audit"
+permalink: /prompts/personal-productivity/growth-opportunities-audit/
+---
+
 # Growth Opportunities Audit
 
 **Category:** `personal-productivity`

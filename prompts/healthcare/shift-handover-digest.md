@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Shift Handover Digest"
+permalink: /prompts/healthcare/shift-handover-digest/
+---
+
 # Shift Handover Digest
 
 **Category:** `healthcare`

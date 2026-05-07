@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Contract Review Summary"
+permalink: /prompts/legal/contract-review-summary/
+---
+
 # Contract Review Summary
 
 **Category:** `legal`

@@ -1,0 +1,14 @@
+<article class="toolkit-card">
+  <a class="toolkit-card__link" href="{{ include.url | relative_url }}">
+    <div class="toolkit-card__meta">
+      {% if include.status %}
+        <span class="toolkit-status toolkit-status--{{ include.status | downcase }}">{{ include.status }}</span>
+      {% endif %}
+      <span>{{ include.complexity }}</span>
+      <span>{{ include.apps }}</span>
+    </div>
+    <h3>{{ include.title }}</h3>
+    <p>{{ include.description }}</p>
+    <span class="toolkit-category toolkit-category--{{ include.category_class }}">{{ include.category }}</span>
+  </a>
+</article>

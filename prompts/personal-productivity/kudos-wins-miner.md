@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Kudos & Wins Miner"
+permalink: /prompts/personal-productivity/kudos-wins-miner/
+---
+
 # Kudos & Wins Miner
 
 **Category:** `personal-productivity`

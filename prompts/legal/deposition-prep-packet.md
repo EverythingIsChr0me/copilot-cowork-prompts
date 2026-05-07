@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Deposition Prep Packet"
+permalink: /prompts/legal/deposition-prep-packet/
+---
+
 # Deposition Prep Packet
 
 **Category:** `legal`

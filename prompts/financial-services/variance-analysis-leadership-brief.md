@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Variance Analysis + Leadership Brief"
+permalink: /prompts/financial-services/variance-analysis-leadership-brief/
+---
+
 ## Variance Analysis + Leadership Brief
 
 **Category:** `financial-services`

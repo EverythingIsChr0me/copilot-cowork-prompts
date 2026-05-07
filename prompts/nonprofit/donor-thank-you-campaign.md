@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Donor Thank-You Campaign"
+permalink: /prompts/nonprofit/donor-thank-you-campaign/
+---
+
 # Donor Thank-You Campaign
 
 **Category:** `nonprofit`

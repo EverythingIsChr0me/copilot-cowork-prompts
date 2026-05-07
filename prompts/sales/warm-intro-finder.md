@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Warm Intro Finder"
+permalink: /prompts/sales/warm-intro-finder/
+---
+
 # Warm Intro Finder
 
 **Category:** `sales`

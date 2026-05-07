@@ -28,12 +28,12 @@ description: "Community-built Cowork prompts and tools for Microsoft 365 Copilot
   </div>
 
   <div class="toolkit-activity" aria-label="Repository activity">
-    <span class="toolkit-activity__left">
+    <a class="toolkit-activity__left toolkit-activity__link" href="{{ '/changelog/' | relative_url }}">
       <span class="toolkit-activity__dot" aria-hidden="true"></span>
       <span id="toolkit-last-updated">Last updated Apr 21, 2026</span>
       <span aria-hidden="true">·</span>
       <span id="toolkit-new-count">0 new this week</span>
-    </span>
+    </a>
     <span id="toolkit-contributors" class="toolkit-activity__contributors" data-count="{{ site.github.contributors.size | default: 1 }}">1 contributor</span>
   </div>
 

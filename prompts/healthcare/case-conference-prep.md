@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Case Conference Prep Pack"
+permalink: /prompts/healthcare/case-conference-prep/
+---
+
 # Case Conference Prep Pack
 
 **Category:** `healthcare`

@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Generate a Cowork Skill"
+permalink: /prompts/experimental/generate-cowork-skill/
+---
+
 # Generate a Cowork Skill
 
 **Category:** `experimental`

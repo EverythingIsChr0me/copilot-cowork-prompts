@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Referral Triage Queue"
+permalink: /prompts/healthcare/referral-triage/
+---
+
 # Referral Triage Queue
 
 **Category:** `healthcare`

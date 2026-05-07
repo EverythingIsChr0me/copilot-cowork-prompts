@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Renewal Risk Signal Scan"
+permalink: /prompts/sales/renewal-risk-scan/
+---
+
 # Renewal Risk Signal Scan
 
 **Category:** `sales`

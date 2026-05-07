@@ -1,3 +1,9 @@
+---
+layout: default
+title: "Workload Dashboard"
+permalink: /prompts/personal-productivity/workload-dashboard/
+---
+
 ## Workload Dashboard
 
 **Category:** `personal-productivity`
