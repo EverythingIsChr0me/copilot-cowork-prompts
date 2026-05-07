@@ -1,5 +1,171 @@
 [
   {
+    "date": "2026-05-07T13:09:47Z",
+    "message": "Update to prompt template structure, site nav",
+    "files": [
+      {
+        "filename": "prompts/experimental/add-skill-to-cowork.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/experimental/cowork-capability-reference.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/experimental/generate-cowork-skill.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/experimental/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/experimental/list-skills.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/financial-services/board-deck-pipeline.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/financial-services/earnings-call-prep-pack.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/financial-services/expense-compliance-sweep.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/financial-services/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/financial-services/variance-analysis-leadership-brief.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/healthcare/case-conference-prep.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/healthcare/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/healthcare/patient-visit-prep.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/healthcare/referral-triage.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/healthcare/regulatory-update-scan.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/healthcare/research-progress-report.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/healthcare/shift-handover-digest.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/human-resources/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/human-resources/new-employee-welcome-kit.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/legal/contract-review-summary.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/legal/deposition-prep-packet.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/legal/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/legal/legal-research-memo.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/legal/matter-status-report.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/legal/settlement-demand-letter.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/nonprofit/donor-thank-you-campaign.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/nonprofit/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/personal-productivity/customer-onboarding.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/personal-productivity/growth-opportunities-audit.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/personal-productivity/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/personal-productivity/kudos-wins-miner.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/personal-productivity/manager-team-kickoff.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/personal-productivity/onedrive-file-intelligence.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/personal-productivity/weekly-status-report.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/personal-productivity/workload-dashboard.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/sales/account-research-brief.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/sales/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/sales/pipeline-review-prep.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/sales/renewal-risk-scan.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/sales/warm-intro-finder.md",
+        "status": "modified"
+      }
+    ]
+  },
+  {
     "date": "2026-05-04T00:54:05Z",
     "message": "Implemented optional video demo for prompts",
     "files": [
@@ -349,16 +515,6 @@
   },
   {
     "date": "2026-04-13T12:39:03Z",
-    "message": "\tmodified:   prompts/experimental/add-skill-to-cowork.md",
-    "files": [
-      {
-        "filename": "prompts/experimental/add-skill-to-cowork.md",
-        "status": "modified"
-      }
-    ]
-  },
-  {
-    "date": "2026-04-13T12:34:04Z",
     "message": "\tmodified:   prompts/experimental/add-skill-to-cowork.md",
     "files": [
       {
