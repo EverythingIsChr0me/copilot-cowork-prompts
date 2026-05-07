@@ -1,3 +1,4 @@
+{% if page.url == '/' %}
 <link rel="stylesheet" href="{{ '/assets/css/hero.css?v=' | append: site.github.build_revision | relative_url }}">
 
 <section class="home-hero" data-featured-hero data-featured-config="{{ '/assets/data/featured.json' | relative_url }}" aria-label="Featured Cowork content" hidden>
@@ -85,3 +86,4 @@
 }
 </script>
 <script defer src="{{ '/assets/js/hero.js?v=' | append: site.github.build_revision | relative_url }}"></script>
+{% endif %}
