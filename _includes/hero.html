@@ -1,0 +1,87 @@
+<link rel="stylesheet" href="{{ '/assets/css/hero.css?v=' | append: site.github.build_revision | relative_url }}">
+
+<section class="home-hero" data-featured-hero data-featured-config="{{ '/assets/data/featured.json' | relative_url }}" aria-label="Featured Cowork content" hidden>
+  <div class="home-hero__inner">
+    <div class="home-hero__video-panel" data-hero-video hidden>
+      <div class="home-hero__video-frame" data-hero-frame></div>
+      <p class="home-hero__caption" data-hero-caption hidden></p>
+    </div>
+
+    <article class="home-hero__prompt-card" data-hero-prompt hidden>
+      <span class="home-hero__badge">Prompt of the week</span>
+      <h2 class="home-hero__title" data-hero-title></h2>
+      <p class="home-hero__description" data-hero-description></p>
+      <div class="home-hero__meta">
+        <span data-hero-category></span>
+        <span aria-hidden="true">·</span>
+        <span data-hero-complexity></span>
+      </div>
+      <ul class="home-hero__apps" data-hero-apps aria-label="Apps"></ul>
+      <div class="home-hero__actions">
+        <a class="home-hero__open" data-hero-open href="#">Open prompt</a>
+        <button class="home-hero__copy" data-hero-copy type="button" aria-label="Copy prompt" title="Copy prompt">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="8" y="8" width="12" height="12" rx="2"></rect>
+            <path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"></path>
+          </svg>
+        </button>
+      </div>
+    </article>
+  </div>
+</section>
+
+<script id="featured-prompt-catalog" type="application/json">
+{
+{% assign first_featured_prompt = true %}
+{% for prompt in site.pages %}
+  {% if prompt.path contains 'prompts/' and prompt.name != 'index.md' %}
+    {% assign prompt_slug = prompt.path | remove_first: 'prompts/' | remove: '.md' %}
+    {% assign parsed_category = '' %}
+    {% if prompt.content contains '<strong>Category:</strong>' %}
+      {% assign parsed_category = prompt.content | split: '<strong>Category:</strong>' | last | split: '</p>' | first | strip_html | strip | remove: '`' %}
+    {% endif %}
+    {% assign parsed_apps = '' %}
+    {% if prompt.content contains '<strong>Apps Involved:</strong>' %}
+      {% assign parsed_apps = prompt.content | split: '<strong>Apps Involved:</strong>' | last | split: '</p>' | first | strip_html | strip %}
+    {% endif %}
+    {% assign parsed_complexity = '' %}
+    {% if prompt.content contains '<strong>Complexity:</strong>' %}
+      {% assign parsed_complexity = prompt.content | split: '<strong>Complexity:</strong>' | last | split: '</p>' | first | split: '(' | first | strip_html | strip %}
+    {% endif %}
+    {% assign parsed_description = '' %}
+    {% if prompt.content contains '<h3 id="description">Description</h3>' %}
+      {% assign parsed_description = prompt.content | split: '<h3 id="description">Description</h3>' | last | split: '<h3' | first | strip_html | strip %}
+    {% endif %}
+    {% assign parsed_prompt_text = '' %}
+    {% if prompt.content contains '<h3 id="the-prompt">The Prompt</h3>' %}
+      {% assign after_prompt_heading = prompt.content | split: '<h3 id="the-prompt">The Prompt</h3>' | last %}
+      {% if after_prompt_heading contains '<code>' %}
+        {% assign parsed_prompt_text = after_prompt_heading | split: '<code>' | last | split: '</code>' | first | strip %}
+      {% endif %}
+    {% endif %}
+    {% assign prompt_category = prompt.category | default: parsed_category %}
+    {% assign prompt_apps = prompt.apps | default: parsed_apps %}
+    {% assign prompt_complexity = prompt.complexity | default: parsed_complexity %}
+    {% assign prompt_description = parsed_description %}
+    {% if prompt.description and prompt.description != '' %}
+      {% unless prompt.description contains '<' %}
+        {% assign prompt_description = prompt.description %}
+      {% endunless %}
+    {% endif %}
+    {% unless first_featured_prompt %},{% endunless %}
+    "{{ prompt_slug }}": {
+      "slug": {{ prompt_slug | jsonify }},
+      "url": {{ prompt.url | relative_url | jsonify }},
+      "title": {{ prompt.title | default: prompt_slug | jsonify }},
+      "description": {{ prompt_description | jsonify }},
+      "apps": {{ prompt_apps | jsonify }},
+      "complexity": {{ prompt_complexity | jsonify }},
+      "category": {{ prompt_category | jsonify }},
+      "prompt_text": {{ parsed_prompt_text | jsonify }}
+    }
+    {% assign first_featured_prompt = false %}
+  {% endif %}
+{% endfor %}
+}
+</script>
+<script defer src="{{ '/assets/js/hero.js?v=' | append: site.github.build_revision | relative_url }}"></script>

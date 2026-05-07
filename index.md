@@ -37,6 +37,8 @@ description: "Community-built Cowork prompts and tools for Microsoft 365 Copilot
     <span id="toolkit-contributors" class="toolkit-activity__contributors" data-count="{{ site.github.contributors.size | default: 1 }}">1 contributor</span>
   </div>
 
+  {% include hero.html %}
+
   <section id="panel-prompts" class="toolkit-panel is-active" role="tabpanel" aria-label="Prompts" data-panel="prompts">
     <div class="toolkit-grid" data-grid="prompts"></div>
     <p class="toolkit-empty" data-empty="prompts" hidden>No matching cards.</p>

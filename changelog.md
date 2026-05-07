@@ -74,8 +74,12 @@ permalink: /changelog/
       const title = titleFromFilename(filename);
       const type = contentType(filename);
       const label = changeLabel(file.status);
+      const opensLabel = href ? `Opens ${type.toLowerCase()}` : "";
       const titleHtml = href
-        ? `<a href="${escapeHtml(href)}">${escapeHtml(title)}</a>`
+        ? `<a class="toolkit-update__title-link" href="${escapeHtml(href)}">
+            <span>${escapeHtml(title)}</span>
+            <span class="toolkit-update__open">Open ${escapeHtml(type.toLowerCase())}</span>
+          </a>`
         : `<span>${escapeHtml(title)}</span>`;
 
       return `
@@ -83,6 +87,7 @@ permalink: /changelog/
           <span class="toolkit-update__meta">
             <span class="toolkit-update__badge toolkit-update__badge--${escapeHtml(file.status)}">${escapeHtml(label)}</span>
             <span>${escapeHtml(type)}</span>
+            ${opensLabel ? `<span>${escapeHtml(opensLabel)}</span>` : ""}
             <span>${escapeHtml(filename)}</span>
           </span>
           ${titleHtml}
