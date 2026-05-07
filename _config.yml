@@ -1,7 +1,19 @@
 title: Cowork Toolkit
 description: Community-built Microsoft 365 Copilot Cowork Prompts and More
+url: https://everythingischr0me.github.io
+baseurl: /copilot-cowork-prompts
 theme: jekyll-theme-cayman
 
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:
+        path: /assets/images/og-image.png
+        width: 1200
+        height: 630
+        alt: Cowork Toolkit preview

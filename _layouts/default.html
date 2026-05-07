@@ -6,8 +6,10 @@
     <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{{ page.description | default: site.description }}">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% if page.path == 'index.md' %}
+      <link rel="stylesheet" href="{{ '/assets/css/hero.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% endif %}
     {% seo %}
-    {% include opengraph.html %}
     <style>
       .copy-wrap          { position: relative; }
       .copy-btn           {
@@ -78,6 +80,9 @@
     {% include copy-prompt.html %}
     {% if page.path contains 'prompts/' and page.name != 'index.md' %}
       {% include demo-embed.html %}
+    {% endif %}
+    {% if page.path == 'index.md' %}
+      <script defer src="{{ '/assets/js/hero.js?v=' | append: site.github.build_revision | relative_url }}"></script>
     {% endif %}
   </body>
 </html>

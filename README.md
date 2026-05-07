@@ -29,6 +29,18 @@ Cowork is a capability in Microsoft 365 Copilot that lets you delegate multi-ste
 
 Each prompt uses a standard template. See [TEMPLATE.md](TEMPLATE.md) for details.
 
+## Local Development
+
+On Windows, run:
+
+```powershell
+.\serve.cmd
+```
+
+Then open <http://127.0.0.1:4000/>.
+
+The production config keeps the GitHub Pages base path for deployed assets and OpenGraph previews. `_config_dev.yml` overrides that base path locally so the dev server works from `/`.
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.

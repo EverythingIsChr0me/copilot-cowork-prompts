@@ -1,6 +1,4 @@
-{% if page.url == '/' %}
-<link rel="stylesheet" href="{{ '/assets/css/hero.css?v=' | append: site.github.build_revision | relative_url }}">
-
+{% if page.path == 'index.md' %}
 <section class="home-hero" data-featured-hero data-featured-config="{{ '/assets/data/featured.json' | relative_url }}" aria-label="Featured Cowork content" hidden>
   <div class="home-hero__inner">
     <div class="home-hero__video-panel" data-hero-video hidden>
@@ -9,7 +7,15 @@
     </div>
 
     <article class="home-hero__prompt-card" data-hero-prompt hidden>
-      <span class="home-hero__badge">Prompt of the week</span>
+      <div class="home-hero__header">
+        <span class="home-hero__badge">Prompt of the week</span>
+        <button class="home-hero__close" data-hero-close type="button" aria-label="Close Prompt of the Week" title="Close for this session">
+          <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M18 6 6 18"></path>
+            <path d="m6 6 12 12"></path>
+          </svg>
+        </button>
+      </div>
       <h2 class="home-hero__title" data-hero-title></h2>
       <p class="home-hero__description" data-hero-description></p>
       <div class="home-hero__meta">
@@ -85,5 +91,4 @@
 {% endfor %}
 }
 </script>
-<script defer src="{{ '/assets/js/hero.js?v=' | append: site.github.build_revision | relative_url }}"></script>
 {% endif %}

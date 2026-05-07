@@ -1,8 +1,42 @@
 (function () {
   var root = document.querySelector("[data-featured-hero]");
   var catalogEl = document.getElementById("featured-prompt-catalog");
+  var closeButton = root ? root.querySelector("[data-hero-close]") : null;
+  var dismissedKey = "coworkToolkit.promptOfWeek.dismissed";
 
   if (!root || !catalogEl) return;
+
+  function storageGet(key) {
+    try {
+      return window.sessionStorage.getItem(key);
+    } catch (error) {
+      return null;
+    }
+  }
+
+  function storageSet(key, value) {
+    try {
+      window.sessionStorage.setItem(key, value);
+    } catch (error) {
+      // The close button still hides the card for this page view.
+    }
+  }
+
+  function hideHero() {
+    root.hidden = true;
+  }
+
+  if (storageGet(dismissedKey) === "true") {
+    hideHero();
+    return;
+  }
+
+  if (closeButton) {
+    closeButton.addEventListener("click", function () {
+      storageSet(dismissedKey, "true");
+      hideHero();
+    });
+  }
 
   function parseCatalog() {
     try {
