@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-05-12T21:58:39Z",
+    "message": "\tmodified:   index.md",
+    "files": [
+      {
+        "filename": "prompts/sales/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/sales/q4-opportunity-risk-assessment.md",
+        "status": "modified"
+      }
+    ]
+  },
+  {
     "date": "2026-05-12T21:48:28Z",
     "message": "Added Q4 sales analysis prompt",
     "files": [
@@ -507,20 +521,6 @@
     "date": "2026-04-13T13:01:49Z",
     "message": "\tmodified:   prompts/experimental/index.md",
     "files": [
-      {
-        "filename": "prompts/experimental/index.md",
-        "status": "modified"
-      }
-    ]
-  },
-  {
-    "date": "2026-04-13T12:57:09Z",
-    "message": "\tnew file:   prompts/experimental/generate-cowork-skill.md",
-    "files": [
-      {
-        "filename": "prompts/experimental/generate-cowork-skill.md",
-        "status": "added"
-      },
       {
         "filename": "prompts/experimental/index.md",
         "status": "modified"
