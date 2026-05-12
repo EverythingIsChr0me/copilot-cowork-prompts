@@ -1,5 +1,19 @@
 [
   {
+    "date": "2026-05-12T21:48:28Z",
+    "message": "Added Q4 sales analysis prompt",
+    "files": [
+      {
+        "filename": "prompts/sales/index.md",
+        "status": "modified"
+      },
+      {
+        "filename": "prompts/sales/q4-opportunity-risk-assessment.md",
+        "status": "added"
+      }
+    ]
+  },
+  {
     "date": "2026-05-07T13:09:47Z",
     "message": "Update to prompt template structure, site nav",
     "files": [
@@ -509,16 +523,6 @@
       },
       {
         "filename": "prompts/experimental/index.md",
-        "status": "modified"
-      }
-    ]
-  },
-  {
-    "date": "2026-04-13T12:39:03Z",
-    "message": "\tmodified:   prompts/experimental/add-skill-to-cowork.md",
-    "files": [
-      {
-        "filename": "prompts/experimental/add-skill-to-cowork.md",
         "status": "modified"
       }
     ]
