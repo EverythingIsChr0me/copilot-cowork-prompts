@@ -148,6 +148,16 @@ description: "Community-built Cowork prompts and tools for Microsoft 365 Copilot
         tab: "prompts",
         status: "New",
         complexity: "Advanced",
+        apps: "Teams, Outlook, Excel, Word, CRM",
+        title: "Q4 Opportunity Risk Assessment",
+        description: "Ranks Q4 opportunities by dollar value, compares CRM data with Teams and email signals, and anonymizes account and product names.",
+        category: "Sales",
+        url: "/prompts/sales/q4-opportunity-risk-assessment"
+      },
+      {
+        tab: "prompts",
+        status: "New",
+        complexity: "Advanced",
         apps: "Outlook, Teams, Excel, Word",
         title: "Renewal Risk Signal Scan",
         description: "Scans customer communications for budget, reorg, competitor, escalation, and champion risk signals.",
