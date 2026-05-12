@@ -14,11 +14,11 @@ description: "Prompts for prospecting, pipeline, and renewals."
   </header>
 
   <div class="toolkit-grid">
+    {% include toolkit-card.html url="/prompts/sales/q4-opportunity-risk-assessment" title="Q4 Opportunity Risk Assessment" description="Ranks Q4 opportunities by dollar value, compares CRM data with Teams and email signals, and anonymizes account and product names." complexity="Advanced" apps="Teams, Outlook, Excel, Word, CRM" category="Sales" category_class="sales" status="New" %}
+
     {% include toolkit-card.html url="/prompts/sales/account-research-brief" title="Account Research Brief" description="Pulls M365 relationship signals into a single pre-meeting brief for a target account." complexity="Advanced" apps="Outlook, Teams, SharePoint, OneDrive, Word" category="Sales" category_class="sales" status="Trending" %}
 
     {% include toolkit-card.html url="/prompts/sales/pipeline-review-prep" title="Pipeline Review Prep" description="Compares pipeline exports with real engagement signals and builds review slides for manager conversations." complexity="Advanced" apps="Excel, Outlook, Teams, PowerPoint" category="Sales" category_class="sales" status="New" %}
-
-    {% include toolkit-card.html url="/prompts/sales/q4-opportunity-risk-assessment" title="Q4 Opportunity Risk Assessment" description="Ranks Q4 opportunities by dollar value, compares CRM data with Teams and email signals, and anonymizes account and product names." complexity="Advanced" apps="Teams, Outlook, Excel, Word, CRM" category="Sales" category_class="sales" status="New" %}
 
     {% include toolkit-card.html url="/prompts/sales/renewal-risk-scan" title="Renewal Risk Signal Scan" description="Scans customer communications for budget, reorg, competitor, escalation, and champion risk signals." complexity="Advanced" apps="Outlook, Teams, Excel, Word" category="Sales" category_class="sales" status="New" %}
 

@@ -62,6 +62,7 @@ description: "Community-built Cowork prompts and tools for Microsoft 365 Copilot
       {
         tab: "prompts",
         status: "Trending",
+        dateAdded: "2026-05-03",
         complexity: "Advanced",
         apps: "Outlook, Teams, Loop, SharePoint, OneDrive",
         title: "Growth Opportunities Audit",
@@ -72,6 +73,7 @@ description: "Community-built Cowork prompts and tools for Microsoft 365 Copilot
       {
         tab: "prompts",
         status: "New",
+        dateAdded: "2026-04-20",
         complexity: "Advanced",
         apps: "Outlook, Teams, SharePoint",
         title: "Kudos & Wins Miner",
@@ -127,6 +129,7 @@ description: "Community-built Cowork prompts and tools for Microsoft 365 Copilot
       {
         tab: "prompts",
         status: "Trending",
+        dateAdded: "2026-04-21",
         complexity: "Advanced",
         apps: "Outlook, Teams, SharePoint, OneDrive, Word",
         title: "Account Research Brief",
@@ -137,6 +140,7 @@ description: "Community-built Cowork prompts and tools for Microsoft 365 Copilot
       {
         tab: "prompts",
         status: "New",
+        dateAdded: "2026-04-21",
         complexity: "Advanced",
         apps: "Excel, Outlook, Teams, PowerPoint",
         title: "Pipeline Review Prep",
@@ -147,6 +151,7 @@ description: "Community-built Cowork prompts and tools for Microsoft 365 Copilot
       {
         tab: "prompts",
         status: "New",
+        dateAdded: "2026-05-12",
         complexity: "Advanced",
         apps: "Teams, Outlook, Excel, Word, CRM",
         title: "Q4 Opportunity Risk Assessment",
@@ -157,6 +162,7 @@ description: "Community-built Cowork prompts and tools for Microsoft 365 Copilot
       {
         tab: "prompts",
         status: "New",
+        dateAdded: "2026-04-21",
         complexity: "Advanced",
         apps: "Outlook, Teams, Excel, Word",
         title: "Renewal Risk Signal Scan",
@@ -166,6 +172,7 @@ description: "Community-built Cowork prompts and tools for Microsoft 365 Copilot
       },
       {
         tab: "prompts",
+        dateAdded: "2026-04-21",
         complexity: "Moderate",
         apps: "Outlook, Teams, SharePoint",
         title: "Warm Intro Finder",
@@ -175,6 +182,7 @@ description: "Community-built Cowork prompts and tools for Microsoft 365 Copilot
       },
       {
         tab: "prompts",
+        dateAdded: "2026-04-13",
         complexity: "Moderate",
         apps: "Word, Outlook",
         title: "Contract Review Summary",
@@ -184,6 +192,7 @@ description: "Community-built Cowork prompts and tools for Microsoft 365 Copilot
       },
       {
         tab: "prompts",
+        dateAdded: "2026-04-13",
         complexity: "Simple",
         apps: "Word, PowerPoint",
         title: "Deposition Prep Packet",
@@ -193,6 +202,7 @@ description: "Community-built Cowork prompts and tools for Microsoft 365 Copilot
       },
       {
         tab: "prompts",
+        dateAdded: "2026-04-13",
         complexity: "Moderate",
         apps: "Word, Outlook",
         title: "Legal Research Memo",
@@ -211,6 +221,7 @@ description: "Community-built Cowork prompts and tools for Microsoft 365 Copilot
       },
       {
         tab: "prompts",
+        dateAdded: "2026-04-13",
         complexity: "Moderate",
         apps: "Word, Outlook",
         title: "Settlement Demand Letter",
@@ -230,6 +241,7 @@ description: "Community-built Cowork prompts and tools for Microsoft 365 Copilot
       {
         tab: "prompts",
         status: "New",
+        dateAdded: "2026-04-21",
         complexity: "Advanced",
         apps: "SharePoint, Outlook, Teams, PowerPoint, Word",
         title: "Case Conference Prep Pack",
@@ -240,6 +252,7 @@ description: "Community-built Cowork prompts and tools for Microsoft 365 Copilot
       {
         tab: "prompts",
         status: "New",
+        dateAdded: "2026-04-21",
         complexity: "Advanced",
         apps: "Outlook, Teams, SharePoint, Word",
         title: "Patient Visit Prep Brief",
@@ -250,6 +263,7 @@ description: "Community-built Cowork prompts and tools for Microsoft 365 Copilot
       {
         tab: "prompts",
         status: "New",
+        dateAdded: "2026-04-21",
         complexity: "Moderate",
         apps: "Outlook, Excel, Teams, Word",
         title: "Referral Triage Queue",
@@ -260,6 +274,7 @@ description: "Community-built Cowork prompts and tools for Microsoft 365 Copilot
       {
         tab: "prompts",
         status: "New",
+        dateAdded: "2026-04-21",
         complexity: "Moderate",
         apps: "Outlook, SharePoint, Teams, Word",
         title: "Policy & Regulatory Update Scan",
@@ -270,6 +285,7 @@ description: "Community-built Cowork prompts and tools for Microsoft 365 Copilot
       {
         tab: "prompts",
         status: "New",
+        dateAdded: "2026-04-21",
         complexity: "Advanced",
         apps: "SharePoint, Excel, Outlook, Word, Teams",
         title: "Research Progress Report Assembly",
@@ -280,6 +296,7 @@ description: "Community-built Cowork prompts and tools for Microsoft 365 Copilot
       {
         tab: "prompts",
         status: "New",
+        dateAdded: "2026-04-21",
         complexity: "Moderate",
         apps: "Teams, Outlook, Word",
         title: "Shift Handover Digest",
@@ -356,6 +373,17 @@ description: "Community-built Cowork prompts and tools for Microsoft 365 Copilot
     let activeTab = "prompts";
     let activeFilter = "All";
 
+    function compareNewestFirst(a, b) {
+      const aDate = Date.parse(a.dateAdded || "");
+      const bDate = Date.parse(b.dateAdded || "");
+
+      if (Number.isNaN(aDate) && Number.isNaN(bDate)) return 0;
+      if (Number.isNaN(aDate)) return 1;
+      if (Number.isNaN(bDate)) return -1;
+
+      return bDate - aDate;
+    }
+
     function hrefFor(path) {
       return `${baseUrl}${path}`;
     }
@@ -386,8 +414,9 @@ description: "Community-built Cowork prompts and tools for Microsoft 365 Copilot
       ["prompts", "skills", "custom"].forEach((tab) => {
         const grid = document.querySelector(`[data-grid="${tab}"]`);
         if (!grid) return;
-        grid.innerHTML = cards.filter((card) => card.tab === tab).map(cardMarkup).join("");
-        const count = cards.filter((card) => card.tab === tab).length;
+        const tabCards = cards.filter((card) => card.tab === tab).sort(compareNewestFirst);
+        grid.innerHTML = tabCards.map(cardMarkup).join("");
+        const count = tabCards.length;
         const countEl = document.querySelector(`[data-count-for="${tab}"]`);
         if (countEl) countEl.textContent = count;
       });

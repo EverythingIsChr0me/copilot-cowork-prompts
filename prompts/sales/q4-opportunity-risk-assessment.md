@@ -2,6 +2,7 @@
 layout: default
 title: "Q4 Opportunity Risk Assessment"
 permalink: /prompts/sales/q4-opportunity-risk-assessment/
+date_added: 2026-05-12
 ---
 
 # Q4 Opportunity Risk Assessment
