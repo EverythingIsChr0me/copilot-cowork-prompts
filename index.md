@@ -326,6 +326,7 @@ description: "Community-built Cowork prompts and tools for Microsoft 365 Copilot
       {
         tab: "skills",
         complexity: "Moderate",
+        dateAdded: "2026-04-13",
         apps: "Word",
         title: "Generate a Cowork Skill",
         description: "Guides Cowork through creating a structured skill file from a described workflow.",
@@ -335,6 +336,7 @@ description: "Community-built Cowork prompts and tools for Microsoft 365 Copilot
       {
         tab: "skills",
         complexity: "Simple",
+        dateAdded: "2026-04-19",
         apps: "Cowork",
         title: "List All Skills",
         description: "Enumerates built-in and custom skills available in the current Cowork workspace.",
@@ -370,6 +372,10 @@ description: "Community-built Cowork prompts and tools for Microsoft 365 Copilot
       Nonprofit: "nonprofit"
     };
 
+    cards.forEach((card, index) => {
+      card.sourceOrder = index;
+    });
+
     let activeTab = "prompts";
     let activeFilter = "All";
 
@@ -377,9 +383,10 @@ description: "Community-built Cowork prompts and tools for Microsoft 365 Copilot
       const aDate = Date.parse(a.dateAdded || "");
       const bDate = Date.parse(b.dateAdded || "");
 
-      if (Number.isNaN(aDate) && Number.isNaN(bDate)) return 0;
+      if (Number.isNaN(aDate) && Number.isNaN(bDate)) return a.sourceOrder - b.sourceOrder;
       if (Number.isNaN(aDate)) return 1;
       if (Number.isNaN(bDate)) return -1;
+      if (aDate === bDate) return a.sourceOrder - b.sourceOrder;
 
       return bDate - aDate;
     }

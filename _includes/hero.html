@@ -43,25 +43,26 @@
 {% for prompt in site.pages %}
   {% if prompt.path contains 'prompts/' and prompt.name != 'index.md' %}
     {% assign prompt_slug = prompt.path | remove_first: 'prompts/' | remove: '.md' %}
+    {% assign prompt_html = prompt.content | markdownify %}
     {% assign parsed_category = '' %}
-    {% if prompt.content contains '<strong>Category:</strong>' %}
-      {% assign parsed_category = prompt.content | split: '<strong>Category:</strong>' | last | split: '</p>' | first | strip_html | strip | remove: '`' %}
+    {% if prompt_html contains '<strong>Category:</strong>' %}
+      {% assign parsed_category = prompt_html | split: '<strong>Category:</strong>' | last | split: '</p>' | first | strip_html | strip | remove: '`' %}
     {% endif %}
     {% assign parsed_apps = '' %}
-    {% if prompt.content contains '<strong>Apps Involved:</strong>' %}
-      {% assign parsed_apps = prompt.content | split: '<strong>Apps Involved:</strong>' | last | split: '</p>' | first | strip_html | strip %}
+    {% if prompt_html contains '<strong>Apps Involved:</strong>' %}
+      {% assign parsed_apps = prompt_html | split: '<strong>Apps Involved:</strong>' | last | split: '</p>' | first | strip_html | strip %}
     {% endif %}
     {% assign parsed_complexity = '' %}
-    {% if prompt.content contains '<strong>Complexity:</strong>' %}
-      {% assign parsed_complexity = prompt.content | split: '<strong>Complexity:</strong>' | last | split: '</p>' | first | split: '(' | first | strip_html | strip %}
+    {% if prompt_html contains '<strong>Complexity:</strong>' %}
+      {% assign parsed_complexity = prompt_html | split: '<strong>Complexity:</strong>' | last | split: '</p>' | first | split: '(' | first | strip_html | strip %}
     {% endif %}
     {% assign parsed_description = '' %}
-    {% if prompt.content contains '<h3 id="description">Description</h3>' %}
-      {% assign parsed_description = prompt.content | split: '<h3 id="description">Description</h3>' | last | split: '<h3' | first | strip_html | strip %}
+    {% if prompt_html contains '<h3 id="description">Description</h3>' %}
+      {% assign parsed_description = prompt_html | split: '<h3 id="description">Description</h3>' | last | split: '<h3' | first | strip_html | strip %}
     {% endif %}
     {% assign parsed_prompt_text = '' %}
-    {% if prompt.content contains '<h3 id="the-prompt">The Prompt</h3>' %}
-      {% assign after_prompt_heading = prompt.content | split: '<h3 id="the-prompt">The Prompt</h3>' | last %}
+    {% if prompt_html contains '<h3 id="the-prompt">The Prompt</h3>' %}
+      {% assign after_prompt_heading = prompt_html | split: '<h3 id="the-prompt">The Prompt</h3>' | last %}
       {% if after_prompt_heading contains '<code>' %}
         {% assign parsed_prompt_text = after_prompt_heading | split: '<code>' | last | split: '</code>' | first | strip %}
       {% endif %}

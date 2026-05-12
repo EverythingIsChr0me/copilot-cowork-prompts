@@ -69,6 +69,33 @@
     }
   }
 
+  function youtubeEmbedUrl(value) {
+    var raw = cleanString(value);
+    if (!raw) return "";
+
+    try {
+      var url = new URL(raw, window.location.href);
+      var host = url.hostname.replace(/^www\./, "");
+      var videoId = "";
+
+      if (host === "youtu.be") {
+        videoId = url.pathname.replace(/^\/+/, "").split("/")[0];
+      } else if (host === "youtube.com" || host === "m.youtube.com") {
+        if (url.pathname === "/watch") {
+          videoId = url.searchParams.get("v") || "";
+        } else if (url.pathname.indexOf("/embed/") === 0) {
+          videoId = url.pathname.split("/")[2] || "";
+        } else if (url.pathname.indexOf("/shorts/") === 0) {
+          videoId = url.pathname.split("/")[2] || "";
+        }
+      }
+
+      return videoId ? "https://www.youtube.com/embed/" + encodeURIComponent(videoId) : cleanUrl(raw);
+    } catch (error) {
+      return "";
+    }
+  }
+
   function titleFromSlug(slug) {
     return slug
       .split("-")
@@ -223,7 +250,7 @@
     .then(function (config) {
       if (!config || typeof config !== "object") return;
 
-      var videoUrl = cleanUrl(config.video_url);
+      var videoUrl = youtubeEmbedUrl(config.video_url);
       var promptSlug = cleanString(config.prompt_slug).replace(/^\/+|\/+$/g, "");
       var prompt = promptSlug ? catalog[promptSlug] : null;
       var hasVideo = Boolean(videoUrl);
