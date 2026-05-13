@@ -1,5 +1,15 @@
 [
   {
+    "date": "2026-05-13T21:45:54Z",
+    "message": "Updated manager email prompt to include demo video link",
+    "files": [
+      {
+        "filename": "prompts/personal-productivity/manager-team-kickoff.md",
+        "status": "modified"
+      }
+    ]
+  },
+  {
     "date": "2026-05-12T21:58:39Z",
     "message": "\tmodified:   index.md",
     "files": [
@@ -513,16 +523,6 @@
     "files": [
       {
         "filename": "prompts/experimental/generate-cowork-skill.md",
-        "status": "modified"
-      }
-    ]
-  },
-  {
-    "date": "2026-04-13T13:01:49Z",
-    "message": "\tmodified:   prompts/experimental/index.md",
-    "files": [
-      {
-        "filename": "prompts/experimental/index.md",
         "status": "modified"
       }
     ]
