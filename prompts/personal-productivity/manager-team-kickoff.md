@@ -16,6 +16,10 @@ permalink: /prompts/personal-productivity/manager-team-kickoff/
 
 Researches recent leadership directives, internal newsletters, and team performance data, then drafts a weekly Monday kickoff email in the manager's established voice and saves it to Outlook Drafts for review before sending.
 
+### Demo
+
+https://youtu.be/-IFbRVKiNsA
+
 ### The Prompt
 
 ```
